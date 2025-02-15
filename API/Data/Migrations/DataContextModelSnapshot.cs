@@ -16,7 +16,7 @@ namespace API.Data.Migrations
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "9.0.2");
 
-            modelBuilder.Entity("Event", b =>
+            modelBuilder.Entity("API.models.Event", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -49,7 +49,7 @@ namespace API.Data.Migrations
                     b.ToTable("Events");
                 });
 
-            modelBuilder.Entity("User", b =>
+            modelBuilder.Entity("API.models.User", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -59,9 +59,13 @@ namespace API.Data.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("Password")
+                    b.Property<byte[]>("PasswordHash")
                         .IsRequired()
-                        .HasColumnType("TEXT");
+                        .HasColumnType("BLOB");
+
+                    b.Property<byte[]>("PasswordSalt")
+                        .IsRequired()
+                        .HasColumnType("BLOB");
 
                     b.Property<string>("Realname")
                         .IsRequired()
@@ -79,7 +83,7 @@ namespace API.Data.Migrations
                     b.ToTable("Users");
                 });
 
-            modelBuilder.Entity("UserEvent", b =>
+            modelBuilder.Entity("API.models.UserEvent", b =>
                 {
                     b.Property<int>("UserId")
                         .HasColumnType("INTEGER");
@@ -94,9 +98,9 @@ namespace API.Data.Migrations
                     b.ToTable("UserEvents");
                 });
 
-            modelBuilder.Entity("Event", b =>
+            modelBuilder.Entity("API.models.Event", b =>
                 {
-                    b.HasOne("User", "Creator")
+                    b.HasOne("API.models.User", "Creator")
                         .WithMany("CreatedEvents")
                         .HasForeignKey("CreatorId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -105,15 +109,15 @@ namespace API.Data.Migrations
                     b.Navigation("Creator");
                 });
 
-            modelBuilder.Entity("UserEvent", b =>
+            modelBuilder.Entity("API.models.UserEvent", b =>
                 {
-                    b.HasOne("Event", "Event")
+                    b.HasOne("API.models.Event", "Event")
                         .WithMany("Participants")
                         .HasForeignKey("EventId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("User", "User")
+                    b.HasOne("API.models.User", "User")
                         .WithMany("JoinedEvents")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -124,12 +128,12 @@ namespace API.Data.Migrations
                     b.Navigation("User");
                 });
 
-            modelBuilder.Entity("Event", b =>
+            modelBuilder.Entity("API.models.Event", b =>
                 {
                     b.Navigation("Participants");
                 });
 
-            modelBuilder.Entity("User", b =>
+            modelBuilder.Entity("API.models.User", b =>
                 {
                     b.Navigation("CreatedEvents");
 

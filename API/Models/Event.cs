@@ -1,3 +1,5 @@
+namespace API.models;
+
 public class Event
 {
     public int Id {get; set;}
@@ -11,5 +13,5 @@ public class Event
     public int CreatorId {get; set;}
     public User Creator {get; set;} = null!;
 
-    public ICollection<UserEvent> Participants {get; set;} = null!;//Many-to-Many with UserEvent 
+    public ICollection<UserEvent>? Participants {get; set;}//Many-to-Many with UserEvent 
 }

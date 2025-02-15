@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/kwantungng/Library/CloudStorage/OneDrive-RobertGordonUniversity/Software Project/Events Organiser Web App Backend/Backend Programming/API/API.csproj": {}
+    "/Users/kwantungng/Downloads/Software-Project-Engineering/API/API.csproj": {}
   },
   "projects": {
-    "/Users/kwantungng/Library/CloudStorage/OneDrive-RobertGordonUniversity/Software Project/Events Organiser Web App Backend/Backend Programming/API/API.csproj": {
+    "/Users/kwantungng/Downloads/Software-Project-Engineering/API/API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/kwantungng/Library/CloudStorage/OneDrive-RobertGordonUniversity/Software Project/Events Organiser Web App Backend/Backend Programming/API/API.csproj",
+        "projectUniqueName": "/Users/kwantungng/Downloads/Software-Project-Engineering/API/API.csproj",
         "projectName": "API",
-        "projectPath": "/Users/kwantungng/Library/CloudStorage/OneDrive-RobertGordonUniversity/Software Project/Events Organiser Web App Backend/Backend Programming/API/API.csproj",
+        "projectPath": "/Users/kwantungng/Downloads/Software-Project-Engineering/API/API.csproj",
         "packagesPath": "/Users/kwantungng/.nuget/packages/",
-        "outputPath": "/Users/kwantungng/Library/CloudStorage/OneDrive-RobertGordonUniversity/Software Project/Events Organiser Web App Backend/Backend Programming/API/obj/",
+        "outputPath": "/Users/kwantungng/Downloads/Software-Project-Engineering/API/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/kwantungng/.nuget/NuGet/NuGet.Config"
@@ -44,6 +44,10 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[9.0.2, )"
+            },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[9.0.2, )"
@@ -55,6 +59,10 @@
             "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
               "version": "[9.0.2, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[8.5.0, )"
             }
           },
           "imports": [

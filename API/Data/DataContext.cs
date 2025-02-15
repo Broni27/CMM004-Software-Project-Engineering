@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using API.models;
 
 public class DataContext : DbContext
 {
@@ -19,10 +20,19 @@ public class DataContext : DbContext
             .HasOne(ue => ue.User)
             .WithMany(u => u.JoinedEvents)
             .HasForeignKey(ue => ue.UserId);
+            //.OnDelete(DeleteBehavior.Restrict); // Prevent cascading delete
+
 
         modelBuilder.Entity<UserEvent>()
             .HasOne(ue => ue.Event)
             .WithMany(e => e.Participants)
             .HasForeignKey(ue => ue.EventId);
+            //.OnDelete(DeleteBehavior.Restrict); // Prevent cascading delete
+        
+            // One-to-Many: User -> Created Events
+        modelBuilder.Entity<Event>()
+        .HasOne(e => e.Creator) // Each event has one creator
+        .WithMany(u => u.CreatedEvents) // A user can create many events
+        .HasForeignKey(e => e.CreatorId); // Foreign Key in Event table
     }
 }

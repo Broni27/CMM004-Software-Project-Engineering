@@ -1,3 +1,5 @@
+namespace API.models;
+
 public class UserEvent
 {
     public int UserId {get; set;}
