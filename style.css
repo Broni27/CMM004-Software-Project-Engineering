@@ -71,13 +71,12 @@
   color: rgba(29, 54, 41, 1);
 }
 .body-container button {
-  margin-top: 60px;
   font-weight: 500;
   height: 40px;
   width: 150px;
   background-color: rgba(93, 130, 111, 1);
   border: none;
-  border-radius: 1px;
+  border-radius: 5px;
   cursor: pointer;
 }
 
