@@ -496,3 +496,11 @@ C:/Users/2412416/Downloads/Backend Programming/API/obj/Debug/net9.0/ref/API.dll
 /Users/kwantungng/Downloads/Software-Project-Engineering/API/obj/Debug/net9.0/API.pdb
 /Users/kwantungng/Downloads/Software-Project-Engineering/API/obj/Debug/net9.0/API.genruntimeconfig.cache
 /Users/kwantungng/Downloads/Software-Project-Engineering/API/obj/Debug/net9.0/ref/API.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/API/bin/Debug/net9.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/API/bin/Debug/net9.0/Microsoft.IdentityModel.Abstractions.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/API/bin/Debug/net9.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/API/bin/Debug/net9.0/Microsoft.IdentityModel.Logging.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/API/bin/Debug/net9.0/Microsoft.IdentityModel.Protocols.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/API/bin/Debug/net9.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/API/bin/Debug/net9.0/Microsoft.IdentityModel.Tokens.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/API/bin/Debug/net9.0/System.IdentityModel.Tokens.Jwt.dll
