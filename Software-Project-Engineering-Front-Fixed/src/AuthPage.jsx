@@ -1,6 +1,8 @@
-import React, { useState } from 'react';
+import React, {useEffect, useState} from 'react';
 import Navbar from './Navbar';
 import './Styles.css';
+import UserService from "./API/UserService.js";
+import {useNavigate} from "react-router-dom";
 
 const AuthPage = () => {
     const [isLogin, setIsLogin] = useState(true);
@@ -9,8 +11,16 @@ const AuthPage = () => {
         login: '',
         password: '',
         confirmPassword: '',
-        realName: ''
+        realname: ''
     });
+    const navigate = useNavigate();
+
+    useEffect(() => {
+        const token = localStorage.getItem('token');
+        if (!token) {
+            UserService.logout()
+        }
+    }, []);
 
     const toggleForm = () => {
         setIsLogin(!isLogin);
@@ -19,7 +29,7 @@ const AuthPage = () => {
             login: '',
             password: '',
             confirmPassword: '',
-            realName: ''
+            realname: ''
         });
     };
 
@@ -40,6 +50,24 @@ const AuthPage = () => {
         }
     };
 
+    const  handleAuth = async (userData) => {
+        console.log(userData);
+        if(isLogin) {
+            try {
+                const user = await UserService.login(userData);
+                localStorage.setItem('token', user.token);
+            } catch (e) {
+                console.log(e);
+            }
+        } else {
+            try {
+                const user = await UserService.registration(userData);
+                localStorage.setItem('token', user.token);
+            } catch (e) {
+                console.log(e);
+            }
+        }
+    }
     return (
         <>
             <Navbar />
@@ -66,7 +94,7 @@ const AuthPage = () => {
                                     type="text"
                                     id="realName"
                                     name="realName"
-                                    value={formData.realName}
+                                    value={formData.realname}
                                     onChange={handleChange}
                                     required
                                 />
@@ -108,7 +136,7 @@ const AuthPage = () => {
                             />
                         </div>
                     )}
-                    <button type="submit" className="auth-button">
+                    <button className="auth-button" onClick={() => handleAuth(formData)}>
                         {isLogin ? 'Login' : 'Register'}
                     </button>
                 </form>
