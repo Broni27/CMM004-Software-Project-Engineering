@@ -104,7 +104,7 @@ const AuthPage = () => {
                         </>
                     )}
                     <div className="input-group">
-                        <label htmlFor="login">Username:</label>
+                        <label htmlFor="login">E-mail:</label>
                         <input
                             type="text"
                             id="login"
