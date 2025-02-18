@@ -3,7 +3,7 @@ import axios from "axios";
 export default class UserService {
     static async registration(user) {
         const { username, realname, email, password } = user;
-        const data = await axios.post(`${import.meta.env.VITE_BASE_URL}/api/account/register`, {
+        const {data} = await axios.post(`${import.meta.env.VITE_BASE_URL}/api/account/register`, {
             username,
             email,
             realname,
@@ -13,9 +13,9 @@ export default class UserService {
     }
 
     static async login(user) {
-        const { email, password } = user;
-        const data = await axios.post(`${import.meta.env.VITE_BASE_URL}/api/account/login`, {
-            email,
+        const { username, password } = user;
+        const {data} = await axios.post(`${import.meta.env.VITE_BASE_URL}/api/account/login`, {
+            username,
             password
         })
         return data

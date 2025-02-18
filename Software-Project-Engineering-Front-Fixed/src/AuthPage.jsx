@@ -15,12 +15,6 @@ const AuthPage = () => {
     });
     const navigate = useNavigate();
 
-    useEffect(() => {
-        const token = localStorage.getItem('token');
-        if (!token) {
-            UserService.logout()
-        }
-    }, []);
 
     const toggleForm = () => {
         setIsLogin(!isLogin);
@@ -54,17 +48,25 @@ const AuthPage = () => {
         console.log(userData);
         if(isLogin) {
             try {
-                const user = await UserService.login(userData);
+                const user = await UserService.login({...userData, username: userData.login});
                 localStorage.setItem('token', user.token);
+                localStorage.setItem('username', user.username);
+
             } catch (e) {
                 console.log(e);
+            }finally {
+                navigate('/home');
             }
         } else {
             try {
-                const user = await UserService.registration(userData);
+                const user = await UserService.registration({...userData, email: userData.login});
                 localStorage.setItem('token', user.token);
+                localStorage.setItem('username', user.username);
+
             } catch (e) {
                 console.log(e);
+            }finally {
+                navigate('/home');
             }
         }
     }
@@ -93,7 +95,7 @@ const AuthPage = () => {
                                 <input
                                     type="text"
                                     id="realName"
-                                    name="realName"
+                                    name="realname"
                                     value={formData.realname}
                                     onChange={handleChange}
                                     required
@@ -102,7 +104,7 @@ const AuthPage = () => {
                         </>
                     )}
                     <div className="input-group">
-                        <label htmlFor="login">E-mail:</label>
+                        <label htmlFor="login">Username:</label>
                         <input
                             type="text"
                             id="login"

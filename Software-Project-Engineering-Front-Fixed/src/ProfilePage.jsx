@@ -10,7 +10,7 @@ const ProfilePage = () => {
                 <div className="user-info">
                     <img src={profileIcon} alt="Profile" className="profile-icon-large" />
                     <span>
-            <p className="user-info-text">Username: user123</p>
+            <p className="user-info-text">Username: {localStorage.getItem("username")}</p>
             <p className="user-info-text">Real Name: Example Example</p>
             <p className="user-info-text">E-Mail: example@example.com</p>
           </span>

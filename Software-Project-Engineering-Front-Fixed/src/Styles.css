@@ -308,3 +308,17 @@ body {
 .event-footer button:hover {
     background-color: rgba(200, 45, 60, 1);
 }
+
+.logout{
+    background-color: #1a3128;
+    width: 100px;
+    font-size: 1rem;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+.logout:hover {
+    background-color: rgba(200, 45, 60, 1);
+}
