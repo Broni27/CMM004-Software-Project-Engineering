@@ -13,8 +13,8 @@ const AuthPage = () => {
         confirmPassword: '',
         realname: ''
     });
+    const [error, setError] = useState(''); //Adds error state for user validation handling
     const navigate = useNavigate();
-
 
     const toggleForm = () => {
         setIsLogin(!isLogin);
@@ -25,6 +25,7 @@ const AuthPage = () => {
             confirmPassword: '',
             realname: ''
         });
+        setError(''); //Resets error state upon toggling between login/register forms
     };
 
     const handleChange = (e) => {
@@ -58,6 +59,12 @@ const AuthPage = () => {
                 localStorage.setItem('username', user.username);
                 navigate('/home'); // Redirect after successful login
             } catch (e) {
+                //If login fails due to incorrect credentials, displays error message
+                if (e.response && e.response.status === 401){
+                    setError('Invalid email or password. Please try again.');   //401 is error code for Unauthorised
+                } else{
+                    setError('An error occured. Please try again later.');      //Cases where other errors occur (likely to be backend issues)
+                }
                 console.log(e);
             }
         } else {
@@ -65,7 +72,7 @@ const AuthPage = () => {
                 const user = await UserService.registration({...userData, email: userData.login});
                 localStorage.setItem('token', user.token);
                 localStorage.setItem('username', user.username);
-
+                navigate('/home');
             } catch (e) {
                 console.log(e);
             }finally {
@@ -139,6 +146,12 @@ const AuthPage = () => {
                                 onChange={handleChange}
                                 required
                             />
+                        </div>
+                    )}
+                    {/* Show error message if there's an error */}
+                    {error && (
+                        <div className="error-message" style={{ color: 'red', marginBottom: '10px' }}>
+                            {error}
                         </div>
                     )}
                     <button className="auth-button" onClick={() => handleAuth(formData)}>

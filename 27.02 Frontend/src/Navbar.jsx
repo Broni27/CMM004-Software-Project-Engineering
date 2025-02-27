@@ -33,7 +33,7 @@ const Navbar = () => {
                     <Link to="/profile" className="navbar-link">
                         <img src={profile} alt="Profile" className="navbar-icon-img" />
                     </Link>
-                    {token && <button className="logout" onClick={logout}>LogOut</button>}
+                    {token && <button className="logout" onClick={logout}>Log Out</button>}
                 </div>
             {/*:*/}
             {/*<div className="navbar-links">*/}

@@ -1,8 +1,40 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Navbar from './Navbar';
 import profileIcon from './assets/profile.svg';
+import axios from 'axios';
 
 const ProfilePage = () => {
+    //Sets up state for storing profile data, and error state
+    const [profileData, setProfileData] = useState({
+        username: '',
+        email: '',
+        realname: ''
+    });
+    
+    const [error, setError] = useState(null);
+
+    //Fetches profile data from database to display correct user details
+    useEffect(() => {
+        const fetchProfileData = async () => {
+            try {
+                const token = localStorage.getItem('token'); //Gets token from localStorage
+                const response = await axios.get('http://localhost:5088/api/account/profile',{
+                    headers: {
+                        Authorization: `Bearer ${token}`    //Attaches token in Authorization header
+                    }
+                })
+
+                setProfileData(response.data); //Set profile data in state
+            } catch(err){
+                setError("Failed to fetch profile data. Please try logging in again.");
+            } finally {
+                setLoading(false);  //Once data fetched, set loading to false
+            }
+        };
+
+        fetchProfileData();
+    }, []);
+
     return (
         <>
             <Navbar />
@@ -10,9 +42,9 @@ const ProfilePage = () => {
                 <div className="user-info">
                     <img src={profileIcon} alt="Profile" className="profile-icon-large" />
                     <span>
-            <p className="user-info-text">Username: {localStorage.getItem("username")}</p>
-            <p className="user-info-text">Real Name: {localStorage.getItem("realname")}</p>
-            <p className="user-info-text">E-Mail: {localStorage.getItem("email")}</p>
+            <p className="user-info-text">Username: {profileData.username}</p>
+            <p className="user-info-text">Real Name: {profileData.realname}</p>
+            <p className="user-info-text">E-Mail: {profileData.email}</p>
           </span>
                 </div>
                 <div className="event-info">
