@@ -48,14 +48,17 @@ const AuthPage = () => {
         console.log(userData);
         if(isLogin) {
             try {
-                const user = await UserService.login({...userData, username: userData.login});
+                // Login expects email and password
+                const user = await UserService.login(
+                    {
+                        email: userData.login,          // Sends 'login' as 'email' (backend expects email)
+                        password: userData.password,    // Send 'password'  
+                    });
                 localStorage.setItem('token', user.token);
                 localStorage.setItem('username', user.username);
-
+                navigate('/home'); // Redirect after successful login
             } catch (e) {
                 console.log(e);
-            }finally {
-                navigate('/home');
             }
         } else {
             try {

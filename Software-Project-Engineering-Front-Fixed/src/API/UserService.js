@@ -3,7 +3,7 @@ import axios from "axios";
 export default class UserService {
     static async registration(user) {
         const { username, realname, email, password } = user;
-        const {data} = await axios.post(`${import.meta.env.VITE_BASE_URL}http://localhost:5088`, {
+        const {data} = await axios.post(`${import.meta.env.VITE_BASE_URL}/api/account/register`, {
             username,
             email,
             realname,

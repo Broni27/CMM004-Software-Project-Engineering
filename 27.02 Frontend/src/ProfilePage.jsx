@@ -11,8 +11,8 @@ const ProfilePage = () => {
                     <img src={profileIcon} alt="Profile" className="profile-icon-large" />
                     <span>
             <p className="user-info-text">Username: {localStorage.getItem("username")}</p>
-            <p className="user-info-text">Real Name: Example Example</p>
-            <p className="user-info-text">E-Mail: example@example.com</p>
+            <p className="user-info-text">Real Name: {localStorage.getItem("realname")}</p>
+            <p className="user-info-text">E-Mail: {localStorage.getItem("email")}</p>
           </span>
                 </div>
                 <div className="event-info">
