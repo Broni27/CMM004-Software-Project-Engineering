@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
+using API.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -47,6 +48,7 @@ builder.Services.AddAuthorization();
 //Adds other services
 builder.Services.AddCors();
 builder.Services.AddScoped<TokenService>();
+builder.Services.AddScoped<EventRepository>();
 builder.Services.AddOpenApi();
 
 var app = builder.Build();

@@ -504,309 +504,473 @@ C:/Users/2412416/Downloads/Backend Programming/API/obj/Debug/net9.0/ref/API.dll
 /Users/kwantungng/Documents/GitHub/Software-Project-Engineering/API/bin/Debug/net9.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 /Users/kwantungng/Documents/GitHub/Software-Project-Engineering/API/bin/Debug/net9.0/Microsoft.IdentityModel.Tokens.dll
 /Users/kwantungng/Documents/GitHub/Software-Project-Engineering/API/bin/Debug/net9.0/System.IdentityModel.Tokens.Jwt.dll
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\appsettings.Development.json
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\appsettings.json
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\API.staticwebassets.endpoints.json
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\API.exe
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\API.deps.json
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\API.runtimeconfig.json
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\API.dll
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\API.pdb
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\Humanizer.dll
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\Microsoft.AspNetCore.OpenApi.dll
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\Microsoft.Bcl.AsyncInterfaces.dll
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\Microsoft.Build.Locator.dll
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\Microsoft.CodeAnalysis.dll
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\Microsoft.CodeAnalysis.CSharp.dll
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.dll
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\Microsoft.Data.Sqlite.dll
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.dll
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Abstractions.dll
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Design.dll
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Relational.dll
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Sqlite.dll
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\Microsoft.Extensions.DependencyModel.dll
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\Microsoft.IdentityModel.Abstractions.dll
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\Microsoft.IdentityModel.JsonWebTokens.dll
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\Microsoft.IdentityModel.Logging.dll
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.dll
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\Microsoft.IdentityModel.Tokens.dll
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\Microsoft.OpenApi.dll
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\Mono.TextTemplating.dll
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\SQLitePCLRaw.batteries_v2.dll
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\SQLitePCLRaw.core.dll
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\SQLitePCLRaw.provider.e_sqlite3.dll
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\System.CodeDom.dll
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\System.Composition.AttributedModel.dll
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\System.Composition.Convention.dll
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\System.Composition.Hosting.dll
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\System.Composition.Runtime.dll
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\System.Composition.TypedParts.dll
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\System.IdentityModel.Tokens.Jwt.dll
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.resources.dll
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.resources.dll
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.resources.dll
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.resources.dll
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.resources.dll
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.resources.dll
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.resources.dll
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.resources.dll
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.resources.dll
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.resources.dll
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\runtimes\browser-wasm\nativeassets\net9.0\e_sqlite3.a
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\runtimes\linux-arm\native\libe_sqlite3.so
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\runtimes\linux-arm64\native\libe_sqlite3.so
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\runtimes\linux-armel\native\libe_sqlite3.so
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\runtimes\linux-mips64\native\libe_sqlite3.so
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\runtimes\linux-musl-arm\native\libe_sqlite3.so
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\runtimes\linux-musl-arm64\native\libe_sqlite3.so
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\runtimes\linux-musl-s390x\native\libe_sqlite3.so
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\runtimes\linux-musl-x64\native\libe_sqlite3.so
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\runtimes\linux-ppc64le\native\libe_sqlite3.so
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\runtimes\linux-s390x\native\libe_sqlite3.so
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\runtimes\linux-x64\native\libe_sqlite3.so
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\runtimes\linux-x86\native\libe_sqlite3.so
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\runtimes\maccatalyst-arm64\native\libe_sqlite3.dylib
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\runtimes\maccatalyst-x64\native\libe_sqlite3.dylib
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\runtimes\osx-arm64\native\libe_sqlite3.dylib
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\runtimes\osx-x64\native\libe_sqlite3.dylib
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\runtimes\win-arm\native\e_sqlite3.dll
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\runtimes\win-arm64\native\e_sqlite3.dll
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\runtimes\win-x64\native\e_sqlite3.dll
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\bin\Debug\net9.0\runtimes\win-x86\native\e_sqlite3.dll
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\obj\Debug\net9.0\API.csproj.AssemblyReference.cache
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\obj\Debug\net9.0\API.GeneratedMSBuildEditorConfig.editorconfig
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\obj\Debug\net9.0\API.AssemblyInfoInputs.cache
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\obj\Debug\net9.0\API.AssemblyInfo.cs
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\obj\Debug\net9.0\API.csproj.CoreCompileInputs.cache
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\obj\Debug\net9.0\API.MvcApplicationPartsAssemblyInfo.cs
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\obj\Debug\net9.0\API.MvcApplicationPartsAssemblyInfo.cache
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\obj\Debug\net9.0\scopedcss\bundle\API.styles.css
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\obj\Debug\net9.0\staticwebassets.build.json
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\obj\Debug\net9.0\staticwebassets.development.json
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\obj\Debug\net9.0\staticwebassets.build.endpoints.json
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\obj\Debug\net9.0\staticwebassets\msbuild.API.Microsoft.AspNetCore.StaticWebAssets.props
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\obj\Debug\net9.0\staticwebassets\msbuild.API.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\obj\Debug\net9.0\staticwebassets\msbuild.build.API.props
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\obj\Debug\net9.0\staticwebassets\msbuild.buildMultiTargeting.API.props
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\obj\Debug\net9.0\staticwebassets\msbuild.buildTransitive.API.props
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\obj\Debug\net9.0\staticwebassets.pack.json
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\obj\Debug\net9.0\API.csproj.Up2Date
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\obj\Debug\net9.0\API.dll
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\obj\Debug\net9.0\refint\API.dll
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\obj\Debug\net9.0\API.pdb
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\obj\Debug\net9.0\API.genruntimeconfig.cache
-D:\Masters Semester 2 files\Group Project\A0 App\Software-Project-Engineering-Back-End\API\obj\Debug\net9.0\ref\API.dll
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\appsettings.Development.json
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\appsettings.json
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\API.staticwebassets.endpoints.json
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\API.exe
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\API.deps.json
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\API.runtimeconfig.json
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\API.dll
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\API.pdb
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\Humanizer.dll
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\Microsoft.AspNetCore.OpenApi.dll
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\Microsoft.Bcl.AsyncInterfaces.dll
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\Microsoft.Build.Locator.dll
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\Microsoft.CodeAnalysis.dll
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\Microsoft.CodeAnalysis.CSharp.dll
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.dll
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\Microsoft.Data.Sqlite.dll
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.dll
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Abstractions.dll
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Design.dll
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Relational.dll
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Sqlite.dll
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\Microsoft.Extensions.DependencyModel.dll
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\Microsoft.IdentityModel.Abstractions.dll
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\Microsoft.IdentityModel.JsonWebTokens.dll
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\Microsoft.IdentityModel.Logging.dll
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.dll
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\Microsoft.IdentityModel.Tokens.dll
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\Microsoft.OpenApi.dll
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\Mono.TextTemplating.dll
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\SQLitePCLRaw.batteries_v2.dll
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\SQLitePCLRaw.core.dll
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\SQLitePCLRaw.provider.e_sqlite3.dll
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\System.CodeDom.dll
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\System.Composition.AttributedModel.dll
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\System.Composition.Convention.dll
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\System.Composition.Hosting.dll
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\System.Composition.Runtime.dll
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\System.Composition.TypedParts.dll
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\System.IdentityModel.Tokens.Jwt.dll
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.resources.dll
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.resources.dll
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.resources.dll
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.resources.dll
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.resources.dll
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.resources.dll
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.resources.dll
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.resources.dll
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.resources.dll
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.resources.dll
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\runtimes\browser-wasm\nativeassets\net9.0\e_sqlite3.a
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\runtimes\linux-arm\native\libe_sqlite3.so
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\runtimes\linux-arm64\native\libe_sqlite3.so
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\runtimes\linux-armel\native\libe_sqlite3.so
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\runtimes\linux-mips64\native\libe_sqlite3.so
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\runtimes\linux-musl-arm\native\libe_sqlite3.so
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\runtimes\linux-musl-arm64\native\libe_sqlite3.so
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\runtimes\linux-musl-s390x\native\libe_sqlite3.so
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\runtimes\linux-musl-x64\native\libe_sqlite3.so
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\runtimes\linux-ppc64le\native\libe_sqlite3.so
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\runtimes\linux-s390x\native\libe_sqlite3.so
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\runtimes\linux-x64\native\libe_sqlite3.so
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\runtimes\linux-x86\native\libe_sqlite3.so
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\runtimes\maccatalyst-arm64\native\libe_sqlite3.dylib
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\runtimes\maccatalyst-x64\native\libe_sqlite3.dylib
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\runtimes\osx-arm64\native\libe_sqlite3.dylib
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\runtimes\osx-x64\native\libe_sqlite3.dylib
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\runtimes\win-arm\native\e_sqlite3.dll
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\runtimes\win-arm64\native\e_sqlite3.dll
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\runtimes\win-x64\native\e_sqlite3.dll
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\bin\Debug\net9.0\runtimes\win-x86\native\e_sqlite3.dll
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\obj\Debug\net9.0\API.csproj.AssemblyReference.cache
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\obj\Debug\net9.0\API.GeneratedMSBuildEditorConfig.editorconfig
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\obj\Debug\net9.0\API.AssemblyInfoInputs.cache
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\obj\Debug\net9.0\API.AssemblyInfo.cs
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\obj\Debug\net9.0\API.csproj.CoreCompileInputs.cache
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\obj\Debug\net9.0\API.MvcApplicationPartsAssemblyInfo.cs
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\obj\Debug\net9.0\API.MvcApplicationPartsAssemblyInfo.cache
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\obj\Debug\net9.0\scopedcss\bundle\API.styles.css
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\obj\Debug\net9.0\staticwebassets.build.json
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\obj\Debug\net9.0\staticwebassets.development.json
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\obj\Debug\net9.0\staticwebassets.build.endpoints.json
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\obj\Debug\net9.0\staticwebassets\msbuild.API.Microsoft.AspNetCore.StaticWebAssets.props
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\obj\Debug\net9.0\staticwebassets\msbuild.API.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\obj\Debug\net9.0\staticwebassets\msbuild.build.API.props
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\obj\Debug\net9.0\staticwebassets\msbuild.buildMultiTargeting.API.props
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\obj\Debug\net9.0\staticwebassets\msbuild.buildTransitive.API.props
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\obj\Debug\net9.0\staticwebassets.pack.json
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\obj\Debug\net9.0\API.csproj.Up2Date
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\obj\Debug\net9.0\API.dll
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\obj\Debug\net9.0\refint\API.dll
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\obj\Debug\net9.0\API.pdb
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\obj\Debug\net9.0\API.genruntimeconfig.cache
-D:\Masters Semester 2 files\Group Project\27.02 Backend\API\obj\Debug\net9.0\ref\API.dll
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/appsettings.Development.json
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/appsettings.json
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/API.staticwebassets.endpoints.json
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/API.exe
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/API.deps.json
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/API.runtimeconfig.json
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/API.dll
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/API.pdb
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/Humanizer.dll
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/Microsoft.AspNetCore.OpenApi.dll
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/Microsoft.Bcl.AsyncInterfaces.dll
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/Microsoft.Build.Locator.dll
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/Microsoft.CodeAnalysis.dll
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/Microsoft.CodeAnalysis.CSharp.dll
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/Microsoft.CodeAnalysis.Workspaces.dll
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/Microsoft.Data.Sqlite.dll
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/Microsoft.EntityFrameworkCore.dll
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/Microsoft.EntityFrameworkCore.Design.dll
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/Microsoft.EntityFrameworkCore.Relational.dll
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/Microsoft.EntityFrameworkCore.Sqlite.dll
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/Microsoft.Extensions.DependencyModel.dll
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/Microsoft.IdentityModel.Abstractions.dll
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/Microsoft.IdentityModel.JsonWebTokens.dll
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/Microsoft.IdentityModel.Logging.dll
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/Microsoft.IdentityModel.Protocols.dll
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/Microsoft.IdentityModel.Tokens.dll
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/Microsoft.OpenApi.dll
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/Mono.TextTemplating.dll
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/SQLitePCLRaw.batteries_v2.dll
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/SQLitePCLRaw.core.dll
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/SQLitePCLRaw.provider.e_sqlite3.dll
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/System.CodeDom.dll
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/System.Composition.AttributedModel.dll
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/System.Composition.Convention.dll
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/System.Composition.Hosting.dll
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/System.Composition.Runtime.dll
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/System.Composition.TypedParts.dll
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/System.IdentityModel.Tokens.Jwt.dll
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/cs/Microsoft.CodeAnalysis.resources.dll
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/de/Microsoft.CodeAnalysis.resources.dll
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/es/Microsoft.CodeAnalysis.resources.dll
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/fr/Microsoft.CodeAnalysis.resources.dll
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/it/Microsoft.CodeAnalysis.resources.dll
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/ja/Microsoft.CodeAnalysis.resources.dll
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/ko/Microsoft.CodeAnalysis.resources.dll
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/pl/Microsoft.CodeAnalysis.resources.dll
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/pt-BR/Microsoft.CodeAnalysis.resources.dll
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/ru/Microsoft.CodeAnalysis.resources.dll
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/tr/Microsoft.CodeAnalysis.resources.dll
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/zh-Hans/Microsoft.CodeAnalysis.resources.dll
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/zh-Hant/Microsoft.CodeAnalysis.resources.dll
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/cs/Microsoft.CodeAnalysis.CSharp.resources.dll
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/de/Microsoft.CodeAnalysis.CSharp.resources.dll
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/es/Microsoft.CodeAnalysis.CSharp.resources.dll
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/fr/Microsoft.CodeAnalysis.CSharp.resources.dll
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/it/Microsoft.CodeAnalysis.CSharp.resources.dll
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/ja/Microsoft.CodeAnalysis.CSharp.resources.dll
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/ko/Microsoft.CodeAnalysis.CSharp.resources.dll
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/pl/Microsoft.CodeAnalysis.CSharp.resources.dll
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/pt-BR/Microsoft.CodeAnalysis.CSharp.resources.dll
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/ru/Microsoft.CodeAnalysis.CSharp.resources.dll
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/tr/Microsoft.CodeAnalysis.CSharp.resources.dll
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.resources.dll
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.resources.dll
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/cs/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/de/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/es/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/fr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/it/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/ja/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/ko/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/pl/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/pt-BR/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/ru/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/tr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/cs/Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/de/Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/es/Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/fr/Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/it/Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/ja/Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/ko/Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/pl/Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/pt-BR/Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/ru/Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/tr/Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/zh-Hans/Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/cs/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/de/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/es/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/fr/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/it/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/ja/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/ko/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/pl/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/pt-BR/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/ru/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/tr/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/zh-Hans/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/runtimes/browser-wasm/nativeassets/net9.0/e_sqlite3.a
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/runtimes/linux-arm/native/libe_sqlite3.so
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/runtimes/linux-arm64/native/libe_sqlite3.so
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/runtimes/linux-armel/native/libe_sqlite3.so
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/runtimes/linux-mips64/native/libe_sqlite3.so
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/runtimes/linux-musl-arm/native/libe_sqlite3.so
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/runtimes/linux-musl-arm64/native/libe_sqlite3.so
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/runtimes/linux-musl-s390x/native/libe_sqlite3.so
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/runtimes/linux-musl-x64/native/libe_sqlite3.so
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/runtimes/linux-ppc64le/native/libe_sqlite3.so
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/runtimes/linux-s390x/native/libe_sqlite3.so
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/runtimes/linux-x64/native/libe_sqlite3.so
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/runtimes/linux-x86/native/libe_sqlite3.so
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/runtimes/maccatalyst-arm64/native/libe_sqlite3.dylib
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/runtimes/maccatalyst-x64/native/libe_sqlite3.dylib
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/runtimes/osx-arm64/native/libe_sqlite3.dylib
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/runtimes/osx-x64/native/libe_sqlite3.dylib
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/runtimes/win-arm/native/e_sqlite3.dll
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/runtimes/win-arm64/native/e_sqlite3.dll
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/runtimes/win-x64/native/e_sqlite3.dll
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/bin/Debug/net9.0/runtimes/win-x86/native/e_sqlite3.dll
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/obj/Debug/net9.0/API.csproj.AssemblyReference.cache
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/obj/Debug/net9.0/API.GeneratedMSBuildEditorConfig.editorconfig
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/obj/Debug/net9.0/API.AssemblyInfoInputs.cache
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/obj/Debug/net9.0/API.AssemblyInfo.cs
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/obj/Debug/net9.0/API.csproj.CoreCompileInputs.cache
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/obj/Debug/net9.0/API.MvcApplicationPartsAssemblyInfo.cs
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/obj/Debug/net9.0/API.MvcApplicationPartsAssemblyInfo.cache
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/obj/Debug/net9.0/scopedcss/bundle/API.styles.css
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/obj/Debug/net9.0/staticwebassets.build.json
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/obj/Debug/net9.0/staticwebassets.development.json
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/obj/Debug/net9.0/staticwebassets.build.endpoints.json
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/obj/Debug/net9.0/staticwebassets/msbuild.API.Microsoft.AspNetCore.StaticWebAssets.props
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/obj/Debug/net9.0/staticwebassets/msbuild.API.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/obj/Debug/net9.0/staticwebassets/msbuild.build.API.props
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/obj/Debug/net9.0/staticwebassets/msbuild.buildMultiTargeting.API.props
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/obj/Debug/net9.0/staticwebassets/msbuild.buildTransitive.API.props
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/obj/Debug/net9.0/staticwebassets.pack.json
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/obj/Debug/net9.0/API.csproj.Up2Date
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/obj/Debug/net9.0/API.dll
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/obj/Debug/net9.0/refint/API.dll
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/obj/Debug/net9.0/API.pdb
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/obj/Debug/net9.0/API.genruntimeconfig.cache
+D:/Masters Semester 2 files/Group Project/A0 App/Software-Project-Engineering-Back-End/API/obj/Debug/net9.0/ref/API.dll
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/appsettings.Development.json
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/appsettings.json
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/API.staticwebassets.endpoints.json
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/API.exe
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/API.deps.json
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/API.runtimeconfig.json
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/API.dll
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/API.pdb
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/Humanizer.dll
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/Microsoft.AspNetCore.OpenApi.dll
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/Microsoft.Bcl.AsyncInterfaces.dll
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/Microsoft.Build.Locator.dll
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/Microsoft.CodeAnalysis.dll
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/Microsoft.CodeAnalysis.CSharp.dll
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/Microsoft.CodeAnalysis.Workspaces.dll
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/Microsoft.Data.Sqlite.dll
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/Microsoft.EntityFrameworkCore.dll
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/Microsoft.EntityFrameworkCore.Design.dll
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/Microsoft.EntityFrameworkCore.Relational.dll
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/Microsoft.EntityFrameworkCore.Sqlite.dll
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/Microsoft.Extensions.DependencyModel.dll
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/Microsoft.IdentityModel.Abstractions.dll
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/Microsoft.IdentityModel.JsonWebTokens.dll
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/Microsoft.IdentityModel.Logging.dll
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/Microsoft.IdentityModel.Protocols.dll
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/Microsoft.IdentityModel.Tokens.dll
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/Microsoft.OpenApi.dll
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/Mono.TextTemplating.dll
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/SQLitePCLRaw.batteries_v2.dll
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/SQLitePCLRaw.core.dll
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/SQLitePCLRaw.provider.e_sqlite3.dll
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/System.CodeDom.dll
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/System.Composition.AttributedModel.dll
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/System.Composition.Convention.dll
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/System.Composition.Hosting.dll
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/System.Composition.Runtime.dll
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/System.Composition.TypedParts.dll
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/System.IdentityModel.Tokens.Jwt.dll
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/cs/Microsoft.CodeAnalysis.resources.dll
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/de/Microsoft.CodeAnalysis.resources.dll
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/es/Microsoft.CodeAnalysis.resources.dll
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/fr/Microsoft.CodeAnalysis.resources.dll
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/it/Microsoft.CodeAnalysis.resources.dll
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/ja/Microsoft.CodeAnalysis.resources.dll
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/ko/Microsoft.CodeAnalysis.resources.dll
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/pl/Microsoft.CodeAnalysis.resources.dll
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/pt-BR/Microsoft.CodeAnalysis.resources.dll
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/ru/Microsoft.CodeAnalysis.resources.dll
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/tr/Microsoft.CodeAnalysis.resources.dll
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/zh-Hans/Microsoft.CodeAnalysis.resources.dll
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/zh-Hant/Microsoft.CodeAnalysis.resources.dll
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/cs/Microsoft.CodeAnalysis.CSharp.resources.dll
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/de/Microsoft.CodeAnalysis.CSharp.resources.dll
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/es/Microsoft.CodeAnalysis.CSharp.resources.dll
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/fr/Microsoft.CodeAnalysis.CSharp.resources.dll
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/it/Microsoft.CodeAnalysis.CSharp.resources.dll
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/ja/Microsoft.CodeAnalysis.CSharp.resources.dll
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/ko/Microsoft.CodeAnalysis.CSharp.resources.dll
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/pl/Microsoft.CodeAnalysis.CSharp.resources.dll
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/pt-BR/Microsoft.CodeAnalysis.CSharp.resources.dll
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/ru/Microsoft.CodeAnalysis.CSharp.resources.dll
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/tr/Microsoft.CodeAnalysis.CSharp.resources.dll
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.resources.dll
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.resources.dll
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/cs/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/de/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/es/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/fr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/it/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/ja/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/ko/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/pl/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/pt-BR/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/ru/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/tr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/cs/Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/de/Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/es/Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/fr/Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/it/Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/ja/Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/ko/Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/pl/Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/pt-BR/Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/ru/Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/tr/Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/zh-Hans/Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/cs/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/de/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/es/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/fr/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/it/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/ja/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/ko/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/pl/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/pt-BR/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/ru/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/tr/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/zh-Hans/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/runtimes/browser-wasm/nativeassets/net9.0/e_sqlite3.a
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/runtimes/linux-arm/native/libe_sqlite3.so
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/runtimes/linux-arm64/native/libe_sqlite3.so
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/runtimes/linux-armel/native/libe_sqlite3.so
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/runtimes/linux-mips64/native/libe_sqlite3.so
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/runtimes/linux-musl-arm/native/libe_sqlite3.so
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/runtimes/linux-musl-arm64/native/libe_sqlite3.so
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/runtimes/linux-musl-s390x/native/libe_sqlite3.so
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/runtimes/linux-musl-x64/native/libe_sqlite3.so
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/runtimes/linux-ppc64le/native/libe_sqlite3.so
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/runtimes/linux-s390x/native/libe_sqlite3.so
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/runtimes/linux-x64/native/libe_sqlite3.so
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/runtimes/linux-x86/native/libe_sqlite3.so
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/runtimes/maccatalyst-arm64/native/libe_sqlite3.dylib
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/runtimes/maccatalyst-x64/native/libe_sqlite3.dylib
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/runtimes/osx-arm64/native/libe_sqlite3.dylib
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/runtimes/osx-x64/native/libe_sqlite3.dylib
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/runtimes/win-arm/native/e_sqlite3.dll
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/runtimes/win-arm64/native/e_sqlite3.dll
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/runtimes/win-x64/native/e_sqlite3.dll
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/bin/Debug/net9.0/runtimes/win-x86/native/e_sqlite3.dll
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/obj/Debug/net9.0/API.csproj.AssemblyReference.cache
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/obj/Debug/net9.0/API.GeneratedMSBuildEditorConfig.editorconfig
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/obj/Debug/net9.0/API.AssemblyInfoInputs.cache
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/obj/Debug/net9.0/API.AssemblyInfo.cs
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/obj/Debug/net9.0/API.csproj.CoreCompileInputs.cache
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/obj/Debug/net9.0/API.MvcApplicationPartsAssemblyInfo.cs
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/obj/Debug/net9.0/API.MvcApplicationPartsAssemblyInfo.cache
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/obj/Debug/net9.0/scopedcss/bundle/API.styles.css
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/obj/Debug/net9.0/staticwebassets.build.json
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/obj/Debug/net9.0/staticwebassets.development.json
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/obj/Debug/net9.0/staticwebassets.build.endpoints.json
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/obj/Debug/net9.0/staticwebassets/msbuild.API.Microsoft.AspNetCore.StaticWebAssets.props
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/obj/Debug/net9.0/staticwebassets/msbuild.API.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/obj/Debug/net9.0/staticwebassets/msbuild.build.API.props
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/obj/Debug/net9.0/staticwebassets/msbuild.buildMultiTargeting.API.props
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/obj/Debug/net9.0/staticwebassets/msbuild.buildTransitive.API.props
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/obj/Debug/net9.0/staticwebassets.pack.json
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/obj/Debug/net9.0/API.csproj.Up2Date
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/obj/Debug/net9.0/API.dll
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/obj/Debug/net9.0/refint/API.dll
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/obj/Debug/net9.0/API.pdb
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/obj/Debug/net9.0/API.genruntimeconfig.cache
+D:/Masters Semester 2 files/Group Project/27.02 Backend/API/obj/Debug/net9.0/ref/API.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/appsettings.Development.json
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/appsettings.json
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/API.staticwebassets.endpoints.json
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/API
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/API.deps.json
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/API.runtimeconfig.json
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/API.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/API.pdb
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/Humanizer.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/Microsoft.AspNetCore.OpenApi.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/Microsoft.Bcl.AsyncInterfaces.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/Microsoft.Build.Locator.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/Microsoft.CodeAnalysis.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/Microsoft.CodeAnalysis.CSharp.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/Microsoft.CodeAnalysis.Workspaces.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/Microsoft.Data.Sqlite.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/Microsoft.EntityFrameworkCore.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/Microsoft.EntityFrameworkCore.Design.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/Microsoft.EntityFrameworkCore.Relational.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/Microsoft.EntityFrameworkCore.Sqlite.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/Microsoft.Extensions.Caching.Abstractions.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/Microsoft.Extensions.Caching.Memory.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/Microsoft.Extensions.Configuration.Abstractions.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/Microsoft.Extensions.DependencyInjection.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/Microsoft.Extensions.DependencyModel.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/Microsoft.Extensions.Logging.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/Microsoft.Extensions.Logging.Abstractions.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/Microsoft.Extensions.Options.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/Microsoft.Extensions.Primitives.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/Microsoft.IdentityModel.Abstractions.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/Microsoft.IdentityModel.Logging.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/Microsoft.IdentityModel.Protocols.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/Microsoft.IdentityModel.Tokens.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/Microsoft.OpenApi.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/Mono.TextTemplating.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/SQLitePCLRaw.batteries_v2.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/SQLitePCLRaw.core.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/SQLitePCLRaw.provider.e_sqlite3.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/System.CodeDom.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/System.Composition.AttributedModel.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/System.Composition.Convention.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/System.Composition.Hosting.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/System.Composition.Runtime.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/System.Composition.TypedParts.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/System.IdentityModel.Tokens.Jwt.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/System.Text.Json.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/cs/Microsoft.CodeAnalysis.resources.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/de/Microsoft.CodeAnalysis.resources.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/es/Microsoft.CodeAnalysis.resources.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/fr/Microsoft.CodeAnalysis.resources.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/it/Microsoft.CodeAnalysis.resources.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/ja/Microsoft.CodeAnalysis.resources.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/ko/Microsoft.CodeAnalysis.resources.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/pl/Microsoft.CodeAnalysis.resources.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/pt-BR/Microsoft.CodeAnalysis.resources.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/ru/Microsoft.CodeAnalysis.resources.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/tr/Microsoft.CodeAnalysis.resources.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/zh-Hans/Microsoft.CodeAnalysis.resources.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/zh-Hant/Microsoft.CodeAnalysis.resources.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/cs/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/de/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/es/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/fr/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/it/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/ja/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/ko/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/pl/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/pt-BR/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/ru/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/tr/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/cs/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/de/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/es/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/fr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/it/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/ja/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/ko/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/pl/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/pt-BR/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/ru/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/tr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/cs/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/de/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/es/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/fr/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/it/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/ja/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/ko/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/pl/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/pt-BR/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/ru/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/tr/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/zh-Hans/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/cs/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/de/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/es/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/fr/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/it/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/ja/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/ko/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/pl/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/pt-BR/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/ru/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/tr/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/zh-Hans/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/runtimes/browser-wasm/nativeassets/net9.0/e_sqlite3.a
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/runtimes/linux-arm/native/libe_sqlite3.so
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/runtimes/linux-arm64/native/libe_sqlite3.so
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/runtimes/linux-armel/native/libe_sqlite3.so
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/runtimes/linux-mips64/native/libe_sqlite3.so
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/runtimes/linux-musl-arm/native/libe_sqlite3.so
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/runtimes/linux-musl-arm64/native/libe_sqlite3.so
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/runtimes/linux-musl-s390x/native/libe_sqlite3.so
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/runtimes/linux-musl-x64/native/libe_sqlite3.so
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/runtimes/linux-ppc64le/native/libe_sqlite3.so
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/runtimes/linux-s390x/native/libe_sqlite3.so
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/runtimes/linux-x64/native/libe_sqlite3.so
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/runtimes/linux-x86/native/libe_sqlite3.so
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/runtimes/maccatalyst-arm64/native/libe_sqlite3.dylib
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/runtimes/maccatalyst-x64/native/libe_sqlite3.dylib
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/runtimes/osx-arm64/native/libe_sqlite3.dylib
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/runtimes/osx-x64/native/libe_sqlite3.dylib
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/runtimes/win-arm/native/e_sqlite3.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/runtimes/win-arm64/native/e_sqlite3.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/runtimes/win-x64/native/e_sqlite3.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/bin/Debug/net9.0/runtimes/win-x86/native/e_sqlite3.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/obj/Debug/net9.0/API.csproj.AssemblyReference.cache
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/obj/Debug/net9.0/API.GeneratedMSBuildEditorConfig.editorconfig
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/obj/Debug/net9.0/API.AssemblyInfoInputs.cache
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/obj/Debug/net9.0/API.AssemblyInfo.cs
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/obj/Debug/net9.0/API.csproj.CoreCompileInputs.cache
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/obj/Debug/net9.0/API.MvcApplicationPartsAssemblyInfo.cs
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/obj/Debug/net9.0/API.MvcApplicationPartsAssemblyInfo.cache
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/obj/Debug/net9.0/API.sourcelink.json
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/obj/Debug/net9.0/scopedcss/bundle/API.styles.css
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/obj/Debug/net9.0/staticwebassets.build.json
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/obj/Debug/net9.0/staticwebassets.development.json
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/obj/Debug/net9.0/staticwebassets.build.endpoints.json
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/obj/Debug/net9.0/staticwebassets/msbuild.API.Microsoft.AspNetCore.StaticWebAssets.props
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/obj/Debug/net9.0/staticwebassets/msbuild.API.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/obj/Debug/net9.0/staticwebassets/msbuild.build.API.props
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/obj/Debug/net9.0/staticwebassets/msbuild.buildMultiTargeting.API.props
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/obj/Debug/net9.0/staticwebassets/msbuild.buildTransitive.API.props
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/obj/Debug/net9.0/staticwebassets.pack.json
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/obj/Debug/net9.0/API.csproj.Up2Date
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/obj/Debug/net9.0/API.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/obj/Debug/net9.0/refint/API.dll
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/obj/Debug/net9.0/API.pdb
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/obj/Debug/net9.0/API.genruntimeconfig.cache
+/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/obj/Debug/net9.0/ref/API.dll
