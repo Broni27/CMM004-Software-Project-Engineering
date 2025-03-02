@@ -1,5 +1,7 @@
-import React, { useState } from 'react';
-import Navbar from './Navbar';
+import React from 'react';
+import { Link } from 'react-router-dom';
+import logo from './assets/logo.svg';
+import profile from './assets/profile.svg';
 import './Styles.css';
 
 const AuthPage = () => {

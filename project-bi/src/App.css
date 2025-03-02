@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  background-image: url("assets/background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+.card {
+  padding: 2em;
+  text-align: center;
+  background-color: rgb(189, 210, 185);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  width: 500px;
+  background-color: rgba(189, 210, 185, 0.5);
+  backdrop-filter: blur(0.1px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.create-event-button {
+  background-color: rgb(30, 52, 41);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.create-event-button:hover {
+  background-color: #004624;
+}
+
+.create-event-button:active {
+  transform: scale(0.95);
+}
+
+.create-event-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+}
