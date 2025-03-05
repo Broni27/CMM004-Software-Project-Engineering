@@ -10,7 +10,7 @@ const ProfilePage = () => {
         email: '',
         realname: ''
     });
-    
+
     const [error, setError] = useState(null);
 
     //Fetches profile data from database to display correct user details

@@ -1,0 +1,99 @@
+/* Container for the event page */
+.event-page-container {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 80px; /* Add padding to avoid overlap with Navbar */
+}
+
+/* Style for the "Create Event" button */
+.create-event-button {
+  background-color: #316148; /* Primary color */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  margin-bottom: 20px; /* Space below the button */
+}
+
+.create-event-button:hover {
+  background-color: #234132; /* Darker shade for hover */
+}
+
+/* Style for the form */
+.create-event-form {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+/* Style for form groups */
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #316148; /* Primary color for labels */
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+.form-group textarea {
+  resize: vertical; /* Allow vertical resizing */
+  min-height: 100px; /* Minimum height for textarea */
+}
+
+/* Style for the submit button */
+.submit-button {
+  background-color: #316148; /* Primary color */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  width: 100%; /* Full width button */
+  margin-top: 10px; /* Space above the button */
+}
+
+.submit-button:hover {
+  background-color: #234132; /* Darker shade for hover */
+}
+
+/* Additional styles for better spacing and alignment */
+.event-page-container h1 {
+  color: #316148; /* Primary color for headings */
+  margin-bottom: 20px;
+}
+
+/* Style for error messages (if needed) */
+.error-message {
+  color: #ff0000; /* Red color for errors */
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* Style for the form when it's hidden (optional) */
+.create-event-form.hidden {
+  display: none;
+}
