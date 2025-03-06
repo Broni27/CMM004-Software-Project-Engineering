@@ -3466,11 +3466,19 @@
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< Updated upstream
       "projectUniqueName": "/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/API.csproj",
       "projectName": "API",
       "projectPath": "/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/API.csproj",
       "packagesPath": "/Users/kwantungng/.nuget/packages/",
       "outputPath": "/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/obj/",
+=======
+      "projectUniqueName": "D:\\Masters Semester 2 files\\GitHub\\Software-Project-Engineering\\28.02 Backend\\API\\API.csproj",
+      "projectName": "API",
+      "projectPath": "D:\\Masters Semester 2 files\\GitHub\\Software-Project-Engineering\\28.02 Backend\\API\\API.csproj",
+      "packagesPath": "C:\\Users\\karol\\.nuget\\packages\\",
+      "outputPath": "D:\\Masters Semester 2 files\\GitHub\\Software-Project-Engineering\\28.02 Backend\\API\\obj\\",
+>>>>>>> Stashed changes
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/kwantungng/.nuget/NuGet/NuGet.Config"
