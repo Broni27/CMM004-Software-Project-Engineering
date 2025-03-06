@@ -64,12 +64,15 @@
   ],
   "logs": [
     {
+<<<<<<< Updated upstream
       "code": "Undefined",
       "level": "Warning",
       "warningLevel": 1,
       "message": "Problem reading the cache file D:\\Masters Semester 2 files\\GitHub\\Software-Project-Engineering\\28.02 Backend\\API\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
     },
     {
+=======
+>>>>>>> Stashed changes
       "code": "NU1900",
       "level": "Warning",
       "warningLevel": 1,
