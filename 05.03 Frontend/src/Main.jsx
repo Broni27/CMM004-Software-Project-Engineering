@@ -22,8 +22,10 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Router>
             <Navbar /> {/* Navbar is now outside Routes to be visible on all pages */}
             <Routes>
+                {/* Default route redirects to /home */}
+                <Route path="/" element={<Navigate to="/home" />} />
+
                 {/* Public routes */}
-                <Route path="/" element={<HomePage />} />
                 <Route path="/home" element={<HomePage />} />
                 <Route path="/auth" element={<AuthPage />} />
 
