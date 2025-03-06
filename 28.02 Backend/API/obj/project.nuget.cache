@@ -1,20 +1,8 @@
 {
   "version": 2,
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-  "dgSpecHash": "cmGV8SJvVuA=",
-  "success": true,
-  "projectFilePath": "/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/API.csproj",
-=======
   "dgSpecHash": "XizOa9e69Bg=",
   "success": true,
   "projectFilePath": "D:\\Masters Semester 2 files\\GitHub\\Software-Project-Engineering\\28.02 Backend\\API\\API.csproj",
->>>>>>> Stashed changes
-=======
-  "dgSpecHash": "XizOa9e69Bg=",
-  "success": true,
-  "projectFilePath": "D:\\Masters Semester 2 files\\GitHub\\Software-Project-Engineering\\28.02 Backend\\API\\API.csproj",
->>>>>>> Stashed changes
   "expectedPackageFiles": [
     "C:\\Users\\karol\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\karol\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\9.0.2\\microsoft.aspnetcore.authentication.jwtbearer.9.0.2.nupkg.sha512",
@@ -75,6 +63,12 @@
     "C:\\Users\\karol\\.nuget\\packages\\system.threading.channels\\7.0.0\\system.threading.channels.7.0.0.nupkg.sha512"
   ],
   "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file D:\\Masters Semester 2 files\\GitHub\\Software-Project-Engineering\\28.02 Backend\\API\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    },
     {
       "code": "NU1900",
       "level": "Warning",

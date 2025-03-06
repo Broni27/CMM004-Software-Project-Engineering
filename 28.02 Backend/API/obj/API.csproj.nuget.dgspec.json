@@ -1,24 +1,6 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-    "/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/API.csproj": {}
-=======
-    "D:\\Masters Semester 2 files\\GitHub\\Software-Project-Engineering\\28.02 Backend\\API\\API.csproj": {}
->>>>>>> Stashed changes
-  },
-  "projects": {
-    "D:\\Masters Semester 2 files\\GitHub\\Software-Project-Engineering\\28.02 Backend\\API\\API.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "D:\\Masters Semester 2 files\\GitHub\\Software-Project-Engineering\\28.02 Backend\\API\\API.csproj",
-        "projectName": "API",
-<<<<<<< Updated upstream
-        "projectPath": "/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/API.csproj",
-        "packagesPath": "/Users/kwantungng/.nuget/packages/",
-        "outputPath": "/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/28.02 Backend/API/obj/",
-=======
     "D:\\Masters Semester 2 files\\GitHub\\Software-Project-Engineering\\28.02 Backend\\API\\API.csproj": {}
   },
   "projects": {
@@ -30,12 +12,6 @@
         "projectPath": "D:\\Masters Semester 2 files\\GitHub\\Software-Project-Engineering\\28.02 Backend\\API\\API.csproj",
         "packagesPath": "C:\\Users\\karol\\.nuget\\packages\\",
         "outputPath": "D:\\Masters Semester 2 files\\GitHub\\Software-Project-Engineering\\28.02 Backend\\API\\obj\\",
->>>>>>> Stashed changes
-=======
-        "projectPath": "D:\\Masters Semester 2 files\\GitHub\\Software-Project-Engineering\\28.02 Backend\\API\\API.csproj",
-        "packagesPath": "C:\\Users\\karol\\.nuget\\packages\\",
-        "outputPath": "D:\\Masters Semester 2 files\\GitHub\\Software-Project-Engineering\\28.02 Backend\\API\\obj\\",
->>>>>>> Stashed changes
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\karol\\AppData\\Roaming\\NuGet\\NuGet.Config"
