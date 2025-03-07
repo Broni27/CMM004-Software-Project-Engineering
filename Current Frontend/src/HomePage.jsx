@@ -9,6 +9,8 @@ const HomePage = () => {
     const [loading, setLoading] = useState(true);                   //Loading state for events
     const [error, setError] = useState(null);                       //Error handling state
     const [showLoginPrompt, setShowLoginPrompt] = useState(false);  //State for login prompts
+    const [registerMessage, setRegisterMessage] = useState('');     //State for register message
+    const [showRegisterMessage, setShowRegisterMessage] = useState(false);
 
     // Check if the user is authenticated
     const isAuthenticated = !!localStorage.getItem('token');
@@ -27,6 +29,22 @@ const HomePage = () => {
         };
 
         fetchEvents();
+    }, []);
+
+    //Registration success message
+    useEffect(() => {
+        const message = sessionStorage.getItem('registerMessage');
+        if (message) {
+            setRegisterMessage(message); 
+            setShowRegisterMessage(true);
+            sessionStorage.removeItem('registerMessage')
+
+            const timer = setTimeout(() => {
+                setShowRegisterMessage(false);
+            }, 5000);
+          
+            return () => clearTimeout(timer);
+        }
     }, []);
 
     const handleEventJoin = async (eventId) => {
@@ -75,10 +93,15 @@ const HomePage = () => {
     return (
         <div>
             <Navbar />
+            {showRegisterMessage && (
+                <div className="login-prompt">
+                    <p>{registerMessage}</p>
+                </div>
+            )}
             <h1>All Available Events</h1>
 
             {/* Error Handling */}
-            {error && <p style={{ color: 'red'}}> {error}</p>}
+            {error && <p style={{ color: 'red' }}> {error}</p>}
 
             {/* Loading Indicator */}
             {loading ? (
@@ -109,7 +132,7 @@ const HomePage = () => {
                 <div className="login-prompt">
                     <p>You need to be logged in to join events.</p>
                     <button onClick={handleLoginRedirect}>Log in</button>
-                    <button class="cancel" onClick={handleCancel}>Cancel</button>
+                    <button className="cancel" onClick={handleCancel}>Cancel</button>
                 </div>
             )}
         </div>

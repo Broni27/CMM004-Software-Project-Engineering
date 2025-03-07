@@ -34,15 +34,29 @@ const AuthPage = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        
+        //Input validation for login
+        if (!formData.login || !formData.password)
+        {
+            setError("Email and password are required.");
+            return;
+        }
+
         if (isLogin) {
+            if (!formData.username || !formData.realname || !formData.confirmPassword) {
+                setError("All fields are required.");
+            }
             console.log('Login:', formData);
         } else {
             if (formData.password !== formData.confirmPassword) {
-                alert('Passwords do not match!');
+                setError('Passwords do not match!');
                 return;
             }
             console.log('Registration:', formData);
         }
+
+        //Calls handleAuth if validation passes
+        handleAuth(formData);
     };
 
     const  handleAuth = async (userData) => {
@@ -55,27 +69,50 @@ const AuthPage = () => {
                         email: userData.login,          // Sends 'login' as 'email' (backend expects email)
                         password: userData.password,    // Send 'password'  
                     });
+
+                    if (!user || !user.token)
+                    {
+                        setError("Invalid login credentials.");
+                        return;
+                    }
+
                 localStorage.setItem('token', user.token);
                 localStorage.setItem('username', user.username);
+                sessionStorage.setItem('loginMessage', "Login successful!");
                 navigate('/home'); // Redirect after successful login
             } catch (e) {
                 //If login fails due to incorrect credentials, displays error message
                 if (e.response && e.response.status === 401){
                     setError('Invalid email or password. Please try again.');   //401 is error code for Unauthorised
-                } else{
-                    setError('An error occured. Please try again later.');      //Cases where other errors occur (likely to be backend issues)
-                }
+                } 
                 console.log(e);
             }
         } else {
             try {
-                const user = await UserService.registration({...userData, email: userData.login});
+                const user = await UserService.registration({
+                    username: userData.username,
+                    email: userData.login,
+                    password: userData.password,
+                    realname: userData.realname,
+                });
+
+                if (!user || !user.token) {
+                    setError("Registration failed.");
+                    return;
+                }
+
                 localStorage.setItem('token', user.token);
                 localStorage.setItem('username', user.username);
+
+                sessionStorage.setItem('registerMessage', "Registration successful!");
+                console.log('Value set:', sessionStorage.getItem('registerMessage'));
+
+
                 navigate('/home');
+
             } catch (e) {
-                if (e.response && e.response.status === 400) {
-                    setError('This email is already registered. Try logging in.');
+                if (e.response && e.response.data && e.response.data.message) {
+                    setError(e.response.data.message);  //Gets error message from backend, see AccountController.cs:54
                 } else {
                     setError('Failed to register. Please try again.');
                 }
@@ -83,6 +120,7 @@ const AuthPage = () => {
             }
         }
     }
+
     return (
         <>
             <Navbar />
@@ -157,7 +195,7 @@ const AuthPage = () => {
                             {error}
                         </div>
                     )}
-                    <button className="auth-button" onClick={() => handleAuth(formData)}>
+                    <button className="auth-button" type="submit">
                         {isLogin ? 'Login' : 'Register'}
                     </button>
                 </form>
