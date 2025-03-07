@@ -25,6 +25,12 @@ namespace API.Controllers
         [HttpPost("login")] //api/account/login
         public async Task<ActionResult<UserDto>> Login(LoginDto loginDto)
         {
+            //Check if email or password are missing
+            if (string.IsNullOrWhiteSpace(loginDto.Email) || string.IsNullOrWhiteSpace(loginDto.Password))
+            {
+                return BadRequest("Email and password are required.");
+            }
+
             var user = await _context.Users.FirstOrDefaultAsync(x => x.Email.ToLower() == loginDto.Email.ToLower());
 
             if (user == null)
@@ -48,10 +54,18 @@ namespace API.Controllers
         [HttpPost("register")] //api/account/register
         public async Task<ActionResult<UserDto>> Register(RegisterDto registerDto)
         {
-            if (await _context.Users.AnyAsync(u => u.Username.ToLower() == registerDto.Username.ToLower()))
-                return BadRequest("This username is used!");
+            //Check if any required fields are missing
+            if (string.IsNullOrWhiteSpace(registerDto.Username) ||
+                string.IsNullOrWhiteSpace(registerDto.Email) ||
+                string.IsNullOrWhiteSpace(registerDto.Password) ||
+                string.IsNullOrWhiteSpace(registerDto.Realname))
+            {
+                return BadRequest(new { message = "All fields are required." });
+            }
+
             if (await _context.Users.AnyAsync(u => u.Email.ToLower() == registerDto.Email.ToLower()))
-                return BadRequest("This email is used!");
+                return BadRequest(new { message = "This email is already registered." });
+
             var signingKey = new HMACSHA512();
             User newUser = new User
             {
@@ -64,6 +78,7 @@ namespace API.Controllers
             };
             _context.Users.Add(newUser);
             await _context.SaveChangesAsync();
+
             return new UserDto
             {
                 Username = newUser.Username,
@@ -83,7 +98,7 @@ namespace API.Controllers
 
             //Logs token for debugging
             Console.WriteLine($"Received Token: {token}");
-            
+
             //Retrieve user from JWT Token
             var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
 
