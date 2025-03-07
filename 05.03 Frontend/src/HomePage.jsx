@@ -1,18 +1,52 @@
 import React, { useState, useEffect } from 'react';
 import Navbar from './Navbar';
 import { useNavigate } from "react-router-dom";
+import axios from 'axios';
 
 const HomePage = () => {
     const navigate = useNavigate();
-    const [showLoginPrompt, setShowLoginPrompt] = useState(false);
+    const [events, setEvents] = useState([]);                       //State for storing events
+    const [loading, setLoading] = useState(true);                   //Loading state for events
+    const [error, setError] = useState(null);                       //Error handling state
+    const [showLoginPrompt, setShowLoginPrompt] = useState(false);  //State for login prompts
 
     // Check if the user is authenticated
     const isAuthenticated = !!localStorage.getItem('token');
 
-    const handleEventJoin = () => {
+    //Fetch events from backend API
+    useEffect(() => {
+        const fetchEvents = async () => {
+            try {
+                const response = await axios.get('http://localhost:5088/api/event');
+                setEvents(response.data);   //Update state with event data
+            } catch (err) {
+                setError("Failed to fetch events");
+            } finally {
+                setLoading(false);  //Sets loading to false once data is fetched
+            }
+        };
+
+        fetchEvents();
+    }, []);
+
+    const handleEventJoin = async (eventId) => {
         if (isAuthenticated) {
-            // If user authenticated, "Join Event" button will work
-            alert('You have joined the event!');
+            // If user authenticated, attempt to join event
+            try {
+                const token = localStorage.getItem('token');
+                await axios.post(
+                    `http://localhost:5088/api/event/join/${eventId}`,
+                    {},
+                    {
+                        headers: {
+                            Authorization: `Bearer ${token}`
+                        }
+                    }
+                );
+                alert('You have successfully joined the event!');
+            } catch (err) {
+                alert('Failed to join event. Please try again later.');
+            }
         } else {
             // If user not logged in, shows a prompt asking to login
             setShowLoginPrompt(true);
@@ -32,7 +66,7 @@ const HomePage = () => {
         if (showLoginPrompt) {
             const timer = setTimeout(() => {
                 setShowLoginPrompt(false);
-            }, 3000); //3000 ms
+            }, 5000); //5000 ms = 5 seconds
 
             return () => clearTimeout(timer); // Clean up the timeout if the prompt disappears or user interacts with it
         }
@@ -42,17 +76,40 @@ const HomePage = () => {
         <div>
             <Navbar />
             <h1>All Available Events</h1>
-            <p>A list of events will be displayed here, based on the contents of the Events database table</p>
-            <h3>Sample Event 1</h3>
-            <button onClick={handleEventJoin}>Join Event 1</button>
-            <h3>Sample Event 2</h3>
-            <button onClick={handleEventJoin}>Join Event 2</button>
+
+            {/* Error Handling */}
+            {error && <p style={{ color: 'red'}}> {error}</p>}
+
+            {/* Loading Indicator */}
+            {loading ? (
+                <p>Loading events...</p>
+            ) : (
+                <>
+                    {/* Display events from database */}
+                    {events.length === 0 ? (
+                        <p>No events available at the moment. Please check back later.</p>
+                    ) : (
+                        events.map((event) => (
+                            <div key={event.id} className="event-card">
+                                <h3>{event.title}</h3>
+                                <p>{event.description}</p>
+                                <p><strong>Creator:</strong> {event.creatorName}</p>
+                                <p><strong>Capacity:</strong> {event.capacity}</p>
+                                <p><strong>Rating:</strong> {event.rating || 'N/A'}</p>
+                                <button onClick={() => handleEventJoin(event.id)}>
+                                    Join Event
+                                </button>
+                            </div>
+                        ))
+                    )}
+                </>
+            )}
 
             {showLoginPrompt && (
                 <div className="login-prompt">
-                    <p>You need to be logged in to see this page.</p>
+                    <p>You need to be logged in to join events.</p>
                     <button onClick={handleLoginRedirect}>Log in</button>
-                    <button onClick={handleCancel}>Cancel</button>
+                    <button class="cancel" onClick={handleCancel}>Cancel</button>
                 </div>
             )}
         </div>

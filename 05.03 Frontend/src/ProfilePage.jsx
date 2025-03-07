@@ -11,6 +11,7 @@ const ProfilePage = () => {
         realname: ''
     });
 
+    const [joinedEvents, setJoinedEvents] = useState([]);   //State for storing joined events
     const [error, setError] = useState(null);
 
     //Fetches profile data from database to display correct user details
@@ -18,17 +19,23 @@ const ProfilePage = () => {
         const fetchProfileData = async () => {
             try {
                 const token = localStorage.getItem('token'); //Gets token from localStorage
-                const response = await axios.get('http://localhost:5088/api/account/profile',{
+                const profileResponse = await axios.get('http://localhost:5088/api/account/profile',{
                     headers: {
                         Authorization: `Bearer ${token}`    //Attaches token in Authorization header
                     }
                 })
 
-                setProfileData(response.data); //Set profile data in state
-            } catch(err){
-                setError("Failed to fetch profile data. Please try logging in again.");
-            } finally {
-                setLoading(false);  //Once data fetched, set loading to false
+                setProfileData(profileResponse.data);   //Set profile data
+
+                const eventsResponse = await axios.get('http://localhost:5088/api/account/joined-events', {
+                    headers: {
+                        Authorization: `Bearer ${token}`
+                    }
+                });
+
+                setJoinedEvents(eventsResponse.data);   //Set joined events
+            } catch (err) {
+                setError('Failed to fetch profile or events data.');
             }
         };
 
@@ -48,22 +55,20 @@ const ProfilePage = () => {
           </span>
                 </div>
                 <div className="event-info">
-                    <p>Nearest Event</p>
+                    <p>Joined Events</p>
                     <div className="event-box">
-                        <h4 className="event-title">Event Name</h4>
-                        <div className="event-description">
-                            <h5>Description:</h5>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore sed laboriosam ex quam rem est reprehenderit similique! Architecto, asperiores dolore provident error tenetur praesentium a ratione et assumenda ea aperiam.
-                            </p>
-                        </div>
-                        <div className="event-footer">
-              <span className="event-footer-info">
-                <p>Event Creator:</p>
-                <p>Creator Name</p>
-              </span>
-                            <button id="leave-btn">Leave</button>
-                        </div>
+                        {joinedEvents.length === 0 ? (
+                            <p>You have not joined any events yet.</p>
+                        ) : (
+                            joinedEvents.map((event) => (
+                                <div key={event.id} className="event-item">
+                                    <h4>{event.title}</h4>
+                                    <p>{event.description}</p>
+                                    <p><strong>Creator:</strong> {event.creatorName}</p>
+                                    <button>Leave</button>
+                                </div>
+                            ))
+                        )}
                     </div>
                 </div>
             </div>
