@@ -25,6 +25,9 @@ public class EventRepository
             Description = x.Description,
             Rating = x.Rating,
             Date = x.Date,
+            StartTime = x.StartTime,
+            EndTime = x.EndTime,
+            Location = x.Location,
             Capacity = x.Capacity,
             CreatorId = x.CreatorId,
             CreatorName = x.Creator.Username
@@ -46,6 +49,9 @@ public class EventRepository
             Description = x.Description,
             Rating = x.Rating,
             Date = x.Date,
+            StartTime = x.StartTime,
+            EndTime = x.EndTime,
+            Location = x.Location,
             Capacity = x.Capacity,
             CreatorId = x.CreatorId,
             CreatorName = x.Creator.Username
@@ -61,6 +67,9 @@ public class EventRepository
         Description = dto.Description,
         Rating = dto.Rating,
         Date = dto.Date,
+        StartTime = dto.StartTime,
+        EndTime = dto.EndTime,
+        Location = dto.Location,
         Capacity = dto.Capacity,
         CreatorId = dto.CreatorId
     };
@@ -78,6 +87,9 @@ public class EventRepository
             Description = e.Description,
             Rating = e.Rating,
             Date = e.Date,
+            StartTime = e.StartTime,
+            EndTime = e.EndTime,
+            Location = e.Location,
             Capacity = e.Capacity,
             CreatorId = e.CreatorId,
             CreatorName = e.Creator.Username
