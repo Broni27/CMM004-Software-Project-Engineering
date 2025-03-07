@@ -112,6 +112,9 @@ public class EventRepository
     existingEvent.Description = dto.Description;
     existingEvent.Rating = dto.Rating;
     existingEvent.Date = dto.Date;
+    existingEvent.StartTime = dto.StartTime;
+    existingEvent.EndTime = dto.EndTime;
+    existingEvent.Location = dto.Location;
     existingEvent.Capacity = dto.Capacity;
 
     await _context.SaveChangesAsync();
