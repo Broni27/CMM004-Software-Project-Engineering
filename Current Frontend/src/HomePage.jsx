@@ -53,7 +53,7 @@ const HomePage = () => {
             try {
                 const token = localStorage.getItem('token');
                 await axios.post(
-                    `http://localhost:5088/api/event/join/${eventId}`,
+                    `http://localhost:5088/api/userevent/join/${eventId}`,
                     {},
                     {
                         headers: {
@@ -79,7 +79,7 @@ const HomePage = () => {
         setShowLoginPrompt(false);
     }
 
-    //Hide the login prompt after 3 seconds
+    //Hide the login prompt after 5 seconds
     useEffect(() => {
         if (showLoginPrompt) {
             const timer = setTimeout(() => {

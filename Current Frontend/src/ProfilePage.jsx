@@ -13,13 +13,14 @@ const ProfilePage = () => {
 
     const [joinedEvents, setJoinedEvents] = useState([]);   //State for storing joined events
     const [error, setError] = useState(null);
+    const [loading, setLoading] = useState(true);
 
     //Fetches profile data from database to display correct user details
     useEffect(() => {
         const fetchProfileData = async () => {
             try {
                 const token = localStorage.getItem('token'); //Gets token from localStorage
-                const profileResponse = await axios.get('http://localhost:5088/api/account/profile',{
+                const profileResponse = await axios.get('http://localhost:5088/api/account/profile', {
                     headers: {
                         Authorization: `Bearer ${token}`    //Attaches token in Authorization header
                     }
@@ -27,7 +28,7 @@ const ProfilePage = () => {
 
                 setProfileData(profileResponse.data);   //Set profile data
 
-                const eventsResponse = await axios.get('http://localhost:5088/api/account/joined-events', {
+                const eventsResponse = await axios.get('http://localhost:5088/api/userevent/joined', {
                     headers: {
                         Authorization: `Bearer ${token}`
                     }
@@ -36,6 +37,8 @@ const ProfilePage = () => {
                 setJoinedEvents(eventsResponse.data);   //Set joined events
             } catch (err) {
                 setError('Failed to fetch profile or events data.');
+            } finally {
+                setLoading(false);
             }
         };
 
@@ -49,22 +52,30 @@ const ProfilePage = () => {
                 <div className="user-info">
                     <img src={profileIcon} alt="Profile" className="profile-icon-large" />
                     <span>
-            <p className="user-info-text">Username: {profileData.username}</p>
-            <p className="user-info-text">Real Name: {profileData.realname}</p>
-            <p className="user-info-text">E-Mail: {profileData.email}</p>
-          </span>
+                        <p className="user-info-text">Username: {profileData.username}</p>
+                        <p className="user-info-text">Real Name: {profileData.realname}</p>
+                        <p className="user-info-text">E-Mail: {profileData.email}</p>
+                    </span>
                 </div>
                 <div className="event-info">
                     <p>Joined Events</p>
                     <div className="event-box">
-                        {joinedEvents.length === 0 ? (
+                        {loading ? (
+                            <p>Loading joined events...</p>
+                        ) : joinedEvents.length === 0 ? (
                             <p>You have not joined any events yet.</p>
                         ) : (
                             joinedEvents.map((event) => (
                                 <div key={event.id} className="event-item">
-                                    <h4>{event.title}</h4>
+                                    <h3>{event.title}</h3>
                                     <p>{event.description}</p>
                                     <p><strong>Creator:</strong> {event.creatorName}</p>
+                                    <p><strong>Date:</strong> {event.date}</p>
+                                    <p><strong>Start Time:</strong> {event.startTime}</p>
+                                    <p><strong>End Time:</strong> {event.endTime}</p>
+                                    <p><strong>Capacity:</strong> {event.capacity}</p>
+                                    <p><strong>Location:</strong> {event.location}</p>
+                                    <p><strong>Rating:</strong> {event.rating || 'N/A'}</p>
                                     <button>Leave</button>
                                 </div>
                             ))
