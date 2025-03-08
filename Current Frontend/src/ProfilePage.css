@@ -1,0 +1,59 @@
+/* Wider event cards for the profile page */
+.profile-event-card {
+    background-color: #f9f9f9; /* Light background for the card */
+    border: 1px solid #ddd; /* Subtle border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Spacing inside the card */
+    margin-bottom: 20px; /* Space between cards */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+    width: 90%; /* Make the card wider */
+    max-width: 1000px; /* Maximum width for the card */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Hover effect for the event card */
+.profile-event-card:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Title of the event */
+.profile-event-card h3 {
+    color: #316148; /* Primary color for the title */
+    margin-bottom: 10px; /* Space below the title */
+    font-size: 24px; /* Larger font size for the title */
+    text-align: center; /* Center the event title */
+}
+
+/* Event details */
+.profile-event-card p {
+    color: #234132; /* Darker shade for text */
+    margin: 8px 0; /* Spacing between paragraphs */
+    font-size: 16px; /* Standard font size for details */
+}
+
+/* Strong text (e.g., labels like "Creator:", "Date:") */
+.profile-event-card p strong {
+    color: #316148; /* Primary color for emphasis */
+}
+
+/* Leave button */
+.profile-event-card button {
+    background-color: #316148; /* Primary color for the button */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 15px; /* Space above the button */
+    width: 100%; /* Full width button */
+}
+
+/* Hover effect for the button */
+.profile-event-card button:hover {
+    background-color: #ff0000; /* Red color on hover */
+}

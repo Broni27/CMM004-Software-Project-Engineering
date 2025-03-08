@@ -13,7 +13,7 @@ const AuthPage = () => {
         confirmPassword: '',
         realname: ''
     });
-    const [error, setError] = useState(''); //Adds error state for user validation handling
+    const [error, setError] = useState(''); // Adds error state for user validation handling
     const navigate = useNavigate();
 
     const toggleForm = () => {
@@ -25,7 +25,7 @@ const AuthPage = () => {
             confirmPassword: '',
             realname: ''
         });
-        setError(''); //Resets error state upon toggling between login/register forms
+        setError(''); // Resets error state upon toggling between login/register forms
     };
 
     const handleChange = (e) => {
@@ -34,10 +34,9 @@ const AuthPage = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        
-        //Input validation for login
-        if (!formData.login || !formData.password)
-        {
+
+        // Input validation for login
+        if (!formData.login || !formData.password) {
             setError("Email and password are required.");
             return;
         }
@@ -55,36 +54,35 @@ const AuthPage = () => {
             console.log('Registration:', formData);
         }
 
-        //Calls handleAuth if validation passes
+        // Calls handleAuth if validation passes
         handleAuth(formData);
     };
 
-    const  handleAuth = async (userData) => {
+    const handleAuth = async (userData) => {
         console.log(userData);
-        if(isLogin) {
+        if (isLogin) {
             try {
                 // Login expects email and password
                 const user = await UserService.login(
                     {
                         email: userData.login,          // Sends 'login' as 'email' (backend expects email)
-                        password: userData.password,    // Send 'password'  
+                        password: userData.password,    // Send 'password'
                     });
 
-                    if (!user || !user.token)
-                    {
-                        setError("Invalid login credentials.");
-                        return;
-                    }
+                if (!user || !user.token) {
+                    setError("Invalid login credentials.");
+                    return;
+                }
 
                 localStorage.setItem('token', user.token);
                 localStorage.setItem('username', user.username);
                 sessionStorage.setItem('loginMessage', "Login successful!");
                 navigate('/home'); // Redirect after successful login
             } catch (e) {
-                //If login fails due to incorrect credentials, displays error message
-                if (e.response && e.response.status === 401){
-                    setError('Invalid email or password. Please try again.');   //401 is error code for Unauthorised
-                } 
+                // If login fails due to incorrect credentials, displays error message
+                if (e.response && e.response.status === 401) {
+                    setError('Invalid email or password. Please try again.');   // 401 is error code for Unauthorised
+                }
                 console.log(e);
             }
         } else {
@@ -107,12 +105,11 @@ const AuthPage = () => {
                 sessionStorage.setItem('registerMessage', "Registration successful!");
                 console.log('Value set:', sessionStorage.getItem('registerMessage'));
 
-
                 navigate('/home');
 
             } catch (e) {
                 if (e.response && e.response.data && e.response.data.message) {
-                    setError(e.response.data.message);  //Gets error message from backend, see AccountController.cs:54
+                    setError(e.response.data.message);  // Gets error message from backend, see AccountController.cs:54
                 } else {
                     setError('Failed to register. Please try again.');
                 }

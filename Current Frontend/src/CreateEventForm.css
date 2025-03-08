@@ -1,10 +1,10 @@
 /* Container for the event page */
 .event-page-container {
   padding: 20px;
-  max-width: 800px;
+  max-width: 1400px; /* Increased maximum width of the container */
   margin: 0 auto;
   text-align: center;
-  padding-top: 80px; /* Add padding to avoid overlap with Navbar */
+  padding-top: 80px; /* Top padding to avoid overlap with Navbar */
 }
 
 /* Style for the "Create Event" button */
@@ -17,7 +17,7 @@
   cursor: pointer;
   border-radius: 5px;
   transition: background-color 0.3s ease;
-  margin-bottom: 20px; /* Space below the button */
+  margin-bottom: 20px; /* Bottom margin */
 }
 
 .create-event-button:hover {
@@ -31,6 +31,10 @@
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin-top: 20px;
+  width: 95%; /* Form takes up 95% of the container width */
+  max-width: 1200px; /* Increased maximum width of the form */
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Style for form groups */
@@ -72,8 +76,8 @@
   cursor: pointer;
   border-radius: 5px;
   transition: background-color 0.3s ease;
-  width: 100%; /* Full width button */
-  margin-top: 10px; /* Space above the button */
+  width: 100%; /* Button takes full width of the form */
+  margin-top: 10px; /* Top margin */
 }
 
 .submit-button:hover {
@@ -92,8 +96,26 @@
   font-size: 14px;
   margin-top: 10px;
 }
+/* Переопределение глобальных стилей для контейнера */
+.event-page-container {
+  display: block; /* Переопределение display: flex */
+  padding: 20px;
+  max-width: 1400px; /* Увеличенная максимальная ширина контейнера */
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 80px; /* Верхний отступ для избежания наложения с Navbar */
+}
 
-/* Style for the form when it's hidden (optional) */
-.create-event-form.hidden {
-  display: none;
+/* Переопределение глобальных стилей для формы */
+.create-event-form {
+  display: block; /* Переопределение display: flex */
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  width: 95%; /* Форма занимает 95% ширины контейнера */
+  max-width: 1200px; /* Увеличенная максимальная ширина формы */
+  margin-left: auto;
+  margin-right: auto;
 }

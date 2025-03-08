@@ -98,32 +98,12 @@ function EventPage() {
                             />
                         </div>
                         <div className="form-group">
-                            <label htmlFor="organizerName">Organizer Name:</label>
-                            <input
-                                type="text"
-                                id="organizerName"
-                                name="organizerName"
-                                placeholder="Enter organizer's name"
-                                required
-                            />
-                        </div>
-                        <div className="form-group">
-                            <label htmlFor="contactEmail">Contact Email:</label>
-                            <input
-                                type="email"
-                                id="contactEmail"
-                                name="contactEmail"
-                                placeholder="Enter contact email"
-                                required
-                            />
-                        </div>
-                        <div className="form-group">
-                            <label htmlFor="numberOfAttendees">Number of Attendees:</label>
+                            <label htmlFor="numberOfAttendees">Event Capacity</label>
                             <input
                                 type="number"
                                 id="numberOfAttendees"
                                 name="numberOfAttendees"
-                                placeholder="Enter number of attendees"
+                                placeholder="Enter event capacity"
                                 required
                             />
                         </div>
@@ -134,4 +114,5 @@ function EventPage() {
         </div>
     );
 }
+
 export default EventPage;

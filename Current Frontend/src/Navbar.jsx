@@ -2,21 +2,18 @@ import React, { useEffect, useState } from 'react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import logo from './assets/logo.svg';
 import profile from './assets/profile.svg';
-import './Styles.css';
-import './LoginPrompt.css'; // Styles for login prompt notifications
+import './Styles.css'; // Import the CSS file for Navbar styles
 import userService from "./API/UserService.js";
 
 const Navbar = () => {
     const navigate = useNavigate();
     const location = useLocation();
     const [showLoginPrompt, setShowLoginPrompt] = useState(false);
-    const [loginSuccessMessage, setLoginSuccessMessage] = useState('');
     const [targetPage, setTargetPage] = useState('');
     let token = localStorage.getItem('token');
 
     const handleLoginPrompt = (e, page) => {
         if (!token) {
-            console.log("Showing login prompt"); // Debug log
             setTargetPage(page);
             setShowLoginPrompt(true);
         } else {
@@ -39,11 +36,8 @@ const Navbar = () => {
 
     const logout = () => {
         userService.logout();
-        sessionStorage.setItem('logoutMessage', "Logged out successfully!");
         navigate('/home');
     };
-
-    // login message handled by AuthPage.jsx:78
 
     useEffect(() => {
         if (!token && location.pathname !== '/auth' && location.pathname !== '/home') {
@@ -52,38 +46,31 @@ const Navbar = () => {
 
         if (showLoginPrompt) {
             const timer = setTimeout(() => {
-                console.log("Hiding login prompt"); // Debug log
                 setShowLoginPrompt(false);
-            }, 10000); // 10 ms = 10 seconds
+            }, 3000);
 
             return () => clearTimeout(timer);
         }
-
-        //Check for login success message from sessionStorage
-        const loginMessage = sessionStorage.getItem('loginMessage');
-        if (loginMessage)
-        {
-            setLoginSuccessMessage(loginMessage);
-            sessionStorage.removeItem('loginMessage');  // Remove it after dislaying
-        }
-
-        //Check for logout success message from sessionStorage
-        const logoutMessage = sessionStorage.getItem('logoutMessage');
-        if (logoutMessage) {
-            setLoginSuccessMessage(logoutMessage);
-            sessionStorage.removeItem('logoutMessage'); // Remove it after displaying
-        }
-
-        //Hides success messages
-        if (loginSuccessMessage) {
-            const messageTimer = setTimeout(() => setLoginSuccessMessage(''), 2000);
-            return () => clearTimeout(messageTimer);
-        }
-    }, [token, location.pathname, showLoginPrompt, loginSuccessMessage]);
-
+    }, [token, location.pathname, showLoginPrompt]);
 
     return (
         <div>
+            {/* Login Prompt */}
+            {showLoginPrompt && location.pathname !== '/auth' && (
+                <div className="login-prompt">
+                    <p>You need to be logged in to access this page.</p>
+                    <button onClick={handleLoginRedirect}>Log in</button>
+                    <button className="cancel" onClick={handleCancel}>Cancel</button>
+                </div>
+            )}
+
+            {/* Display different message if user is already on AuthPage */}
+            {showLoginPrompt && location.pathname === '/auth' && (
+                <div className="login-prompt">
+                    <p>Please log in below</p>
+                </div>
+            )}
+
             <nav className="navbar">
                 <div className="navbar-logo">
                     <img src={logo} alt="Logo" className="navbar-logo-img" />
@@ -107,29 +94,6 @@ const Navbar = () => {
                     {!token && <Link to="/auth" className="navbar-link">Login</Link>}
                 </div>
             </nav>
-
-            {/*Success Message */}
-            {loginSuccessMessage && (
-                <div className="login-prompt">
-                    {loginSuccessMessage}
-                </div>
-            )}
-
-            {/* Login Prompt */}
-            {showLoginPrompt && location.pathname !== '/auth' && (
-                <div className="login-prompt">
-                    <p>You need to be logged in to access this page.</p>
-                    <button onClick={handleLoginRedirect}>Log in</button>
-                    <button className="cancel" onClick={handleCancel}>Cancel</button>
-                </div>
-            )}
-
-            {/* Display different message if user is already on AuthPage */}
-            {showLoginPrompt && location.pathname === '/auth' && (
-                <div className="login-prompt">
-                    <p>Please log in below</p>
-                </div>
-            )}
         </div>
     );
 };
