@@ -15,7 +15,7 @@ const ProfilePage = () => {
     const [error, setError] = useState(null);
     const [loading, setLoading] = useState(true);
 
-    //Fetches profile data from database to display correct user details
+    //Fetches profile data and user's joined events
     useEffect(() => {
         const fetchProfileData = async () => {
             try {
@@ -29,9 +29,7 @@ const ProfilePage = () => {
                 setProfileData(profileResponse.data);   //Set profile data
 
                 const eventsResponse = await axios.get('http://localhost:5088/api/userevent/joined', {
-                    headers: {
-                        Authorization: `Bearer ${token}`
-                    }
+                    headers: { Authorization: `Bearer ${token}`}
                 });
 
                 setJoinedEvents(eventsResponse.data);   //Set joined events
@@ -44,6 +42,22 @@ const ProfilePage = () => {
 
         fetchProfileData();
     }, []);
+
+    //Leaving events handler
+    const handleLeaveEvent = async (eventId) => {
+        try {
+            const token = localStorage.getItem('token');
+            await axios.delete(`http://localhost:5088/api/userevent/leave/${eventId}`, {
+                headers:  { Authorization: `Bearer ${token}`}
+            });
+            
+            //Re-fetch all joined events after leaving
+            fetchProfileData();
+            
+        } catch (err) {
+            alert('Failed to leave event. Please try again.');
+        }
+    };
 
     return (
         <>
@@ -76,7 +90,7 @@ const ProfilePage = () => {
                                     <p><strong>Capacity:</strong> {event.capacity}</p>
                                     <p><strong>Location:</strong> {event.location}</p>
                                     <p><strong>Rating:</strong> {event.rating || 'N/A'}</p>
-                                    <button>Leave</button>
+                                    <button onClick={() => handleLeaveEvent(event.id)}>Leave Event</button>
                                 </div>
                             ))
                         )}
