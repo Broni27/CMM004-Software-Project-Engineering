@@ -16,18 +16,18 @@ const HomePage = () => {
     const isAuthenticated = !!localStorage.getItem('token');
 
     //Fetch events from backend API
-    useEffect(() => {
-        const fetchEvents = async () => {
-            try {
-                const response = await axios.get('http://localhost:5088/api/event');
-                setEvents(response.data);   //Update state with event data
-            } catch (err) {
-                setError("Failed to fetch events");
-            } finally {
-                setLoading(false);  //Sets loading to false once data is fetched
-            }
-        };
+    const fetchEvents = async () => {
+        try {
+            const response = await axios.get('http://localhost:5088/api/event');
+            setEvents(response.data);   //Update state with event data
+        } catch (err) {
+            setError("Failed to fetch events");
+        } finally {
+            setLoading(false);  //Sets loading to false once data is fetched
+        }
+    };
 
+    useEffect(() => {
         fetchEvents();
     }, []);
 
@@ -35,19 +35,23 @@ const HomePage = () => {
     useEffect(() => {
         const message = sessionStorage.getItem('registerMessage');
         if (message) {
-            setRegisterMessage(message); 
+            setRegisterMessage(message);
             setShowRegisterMessage(true);
             sessionStorage.removeItem('registerMessage')
 
             const timer = setTimeout(() => {
                 setShowRegisterMessage(false);
             }, 5000);
-          
+
             return () => clearTimeout(timer);
         }
     }, []);
 
     const handleEventJoin = async (eventId) => {
+
+        //Finds event object from events list (allows for displaying details in messages/alerts etc.)
+        const eventToJoin = events.find(ev => ev.id === eventId);
+
         if (isAuthenticated) {
             // If user authenticated, attempt to join event
             try {
@@ -61,7 +65,9 @@ const HomePage = () => {
                         }
                     }
                 );
-                alert('You have successfully joined the event!');
+                alert(`You have successfully joined the event: ${eventToJoin?.title || 'Unknown Event'}!`);
+                //Re-fetch events to update capacity immediately
+                await fetchEvents();
             } catch (err) {
                 alert('Failed to join event. Please try again later.');
             }
@@ -120,7 +126,7 @@ const HomePage = () => {
                                 <p><strong>Date:</strong> {event.date}</p>
                                 <p><strong>Start Time:</strong> {event.startTime}</p>
                                 <p><strong>End Time:</strong> {event.endTime}</p>
-                                <p><strong>Capacity:</strong> {event.capacity}</p>
+                                <p><strong>Capacity:</strong> {event.capacity || 'Event is full!'}</p>
                                 <p><strong>Location:</strong> {event.location}</p>
                                 <p><strong>Rating:</strong> {event.rating || 'N/A'}</p>
                                 <button onClick={() => handleEventJoin(event.id)}>
