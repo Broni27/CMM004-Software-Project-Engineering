@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/Current Backend/API/API.csproj": {}
+    "D:\\Masters Semester 2 files\\GitHub\\Software-Project-Engineering\\Current Backend\\API\\API.csproj": {}
   },
   "projects": {
-    "/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/Current Backend/API/API.csproj": {
+    "D:\\Masters Semester 2 files\\GitHub\\Software-Project-Engineering\\Current Backend\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/Current Backend/API/API.csproj",
+        "projectUniqueName": "D:\\Masters Semester 2 files\\GitHub\\Software-Project-Engineering\\Current Backend\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/Current Backend/API/API.csproj",
-        "packagesPath": "/Users/kwantungng/.nuget/packages/",
-        "outputPath": "/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/Current Backend/API/obj/",
+        "projectPath": "D:\\Masters Semester 2 files\\GitHub\\Software-Project-Engineering\\Current Backend\\API\\API.csproj",
+        "packagesPath": "C:\\Users\\karol\\.nuget\\packages\\",
+        "outputPath": "D:\\Masters Semester 2 files\\GitHub\\Software-Project-Engineering\\Current Backend\\API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/kwantungng/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\karol\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
@@ -38,7 +38,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net9.0": {
@@ -84,7 +84,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.102/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

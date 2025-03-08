@@ -117,7 +117,11 @@ const HomePage = () => {
                                 <h3>{event.title}</h3>
                                 <p>{event.description}</p>
                                 <p><strong>Creator:</strong> {event.creatorName}</p>
+                                <p><strong>Date:</strong> {event.date}</p>
+                                <p><strong>Start Time:</strong> {event.startTime}</p>
+                                <p><strong>End Time:</strong> {event.endTime}</p>
                                 <p><strong>Capacity:</strong> {event.capacity}</p>
+                                <p><strong>Location:</strong> {event.location}</p>
                                 <p><strong>Rating:</strong> {event.rating || 'N/A'}</p>
                                 <button onClick={() => handleEventJoin(event.id)}>
                                     Join Event
