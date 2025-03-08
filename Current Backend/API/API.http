@@ -1,22 +1,47 @@
 @API_HostAddress = http://localhost:5088
 
 ###
+//User login
+POST {{API_HostAddress}}/api/account/login
+Content-Type: application/json
 
+{
+    "email":"testuser@example.com",
+    "password":"Test@123"
+}
+
+###
+
+// Get all events
 GET {{API_HostAddress}}/api/event/
 Accept: application/json
 
 ###
 
+//Get a single event by ID
 GET {{API_HostAddress}}/api/event/2
 Accept: application/json
 
 ###
+//Get all events the user has created
+GET {{API_HostAddress}}/api/event/created
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiI4IiwiZW1haWwiOiJ0ZXN0dXNlckBleGFtcGxlLmNvbSIsIm5iZiI6MTc0MTQyMTU3OCwiZXhwIjoxNzQyMDI2Mzc4LCJpYXQiOjE3NDE0MjE1Nzh9.egXSIl2dGuSLofI4xYe7czB5eY_i5IaryuqiJziy_atgr3I2ZrT_RErZ7Ak0ZzwWmlymfoAe2K8dCsz8h2c6fA
 
+###
+//Get all events the user has joined
+GET {{API_HostAddress}}/api/userevent/joined
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiI4IiwiZW1haWwiOiJ0ZXN0dXNlckBleGFtcGxlLmNvbSIsIm5iZiI6MTc0MTQyMTU3OCwiZXhwIjoxNzQyMDI2Mzc4LCJpYXQiOjE3NDE0MjE1Nzh9.egXSIl2dGuSLofI4xYe7czB5eY_i5IaryuqiJziy_atgr3I2ZrT_RErZ7Ak0ZzwWmlymfoAe2K8dCsz8h2c6fA
+
+###
+//User creates an event
 POST {{API_HostAddress}}/api/event/
 Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiI4IiwiZW1haWwiOiJ0ZXN0dXNlckBleGFtcGxlLmNvbSIsIm5iZiI6MTc0MTQyMTU3OCwiZXhwIjoxNzQyMDI2Mzc4LCJpYXQiOjE3NDE0MjE1Nzh9.egXSIl2dGuSLofI4xYe7czB5eY_i5IaryuqiJziy_atgr3I2ZrT_RErZ7Ak0ZzwWmlymfoAe2K8dCsz8h2c6fA
 
 {
-    "Title":"Event01",
+    "Title":"Event02",
     "Description":"Event01 Description",
     "Date":"2025-03-08",
     "StartTime":"10:00:00",
@@ -25,14 +50,26 @@ Content-Type: application/json
     "Capacity":30,
     "CreatorId":8
 }
+###
+//User joins an event
+POST {{API_HostAddress}}/api/userevent/join/3
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiI4IiwiZW1haWwiOiJ0ZXN0dXNlckBleGFtcGxlLmNvbSIsIm5iZiI6MTc0MTQyMTU3OCwiZXhwIjoxNzQyMDI2Mzc4LCJpYXQiOjE3NDE0MjE1Nzh9.egXSIl2dGuSLofI4xYe7czB5eY_i5IaryuqiJziy_atgr3I2ZrT_RErZ7Ak0ZzwWmlymfoAe2K8dCsz8h2c6fA
 
 ###
+//User leaves an event
+DELETE {{API_HostAddress}}/api/userevent/leave/3
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiI4IiwiZW1haWwiOiJ0ZXN0dXNlckBleGFtcGxlLmNvbSIsIm5iZiI6MTc0MTQyMTU3OCwiZXhwIjoxNzQyMDI2Mzc4LCJpYXQiOjE3NDE0MjE1Nzh9.egXSIl2dGuSLofI4xYe7czB5eY_i5IaryuqiJziy_atgr3I2ZrT_RErZ7Ak0ZzwWmlymfoAe2K8dCsz8h2c6fA
 
-PUT {{API_HostAddress}}/api/event/2
+###
+//User updates an event
+PUT {{API_HostAddress}}/api/event/3
 Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiI4IiwiZW1haWwiOiJ0ZXN0dXNlckBleGFtcGxlLmNvbSIsIm5iZiI6MTc0MTQyMTU3OCwiZXhwIjoxNzQyMDI2Mzc4LCJpYXQiOjE3NDE0MjE1Nzh9.egXSIl2dGuSLofI4xYe7czB5eY_i5IaryuqiJziy_atgr3I2ZrT_RErZ7Ak0ZzwWmlymfoAe2K8dCsz8h2c6fA
 
 {
-    "Title":"Event01",
+    "Title":"Event02",
     "Description":"Event01 Description",
     "Date":"2025-03-08",
     "StartTime":"10:00:00",
@@ -41,3 +78,9 @@ Content-Type: application/json
     "Capacity":20,
     "CreatorId":8
 }
+
+###
+//User deletes an event
+DELETE {{API_HostAddress}}/api/event/2
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiI4IiwiZW1haWwiOiJ0ZXN0dXNlckBleGFtcGxlLmNvbSIsIm5iZiI6MTc0MTQyMTU3OCwiZXhwIjoxNzQyMDI2Mzc4LCJpYXQiOjE3NDE0MjE1Nzh9.egXSIl2dGuSLofI4xYe7czB5eY_i5IaryuqiJziy_atgr3I2ZrT_RErZ7Ak0ZzwWmlymfoAe2K8dCsz8h2c6fA

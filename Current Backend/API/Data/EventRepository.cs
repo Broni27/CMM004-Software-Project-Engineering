@@ -59,7 +59,29 @@ public class EventRepository
         .SingleOrDefaultAsync();
     }
 
-    public async Task<EventDto> CreateEventAsync(CreateEventDto dto)
+    public async Task<List<EventDto>> GetEventsCreatedByUserAsync(int userId)
+    {
+        return await _context.Events
+        .Where(x => x.CreatorId == userId)
+        .Include(x => x.Creator)
+        .Select(x => new EventDto
+        {
+            Id = x.Id,
+            Title = x.Title,
+            Description = x.Description,
+            Rating = x.Rating,
+            Date = x.Date,
+            StartTime = x.StartTime,
+            EndTime = x.EndTime,
+            Location = x.Location,
+            Capacity = x.Capacity,
+            CreatorId = x.CreatorId,
+            CreatorName = x.Creator.Username
+        })
+        .ToListAsync();
+    }
+
+    public async Task<EventDto> CreateEventAsync(CreateEventDto dto, int creatorId)
 {
     var newEvent = new Event
     {
@@ -71,7 +93,7 @@ public class EventRepository
         EndTime = dto.EndTime,
         Location = dto.Location,
         Capacity = dto.Capacity,
-        CreatorId = dto.CreatorId
+        CreatorId = creatorId
     };
 
     _context.Events.Add(newEvent);
@@ -134,5 +156,10 @@ public class EventRepository
     await _context.SaveChangesAsync();
 
     return true;
+    }
+
+    public async Task<Event?> GetEventEntityByIdAsync(int id)
+    {
+    return await _context.Events.FindAsync(id);
     }
 }

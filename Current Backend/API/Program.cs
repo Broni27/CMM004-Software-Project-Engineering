@@ -49,6 +49,7 @@ builder.Services.AddAuthorization();
 builder.Services.AddCors();
 builder.Services.AddScoped<TokenService>();
 builder.Services.AddScoped<EventRepository>();
+builder.Services.AddScoped<UserEventRepository>();
 builder.Services.AddOpenApi();
 
 var app = builder.Build();
