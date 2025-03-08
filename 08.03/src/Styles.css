@@ -1,0 +1,362 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('assets/background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#root {
+    margin: 0;
+    padding: 0;
+}
+
+/* Стили для аутентификации */
+.auth-container {
+    max-width: 400px;
+    width: 100%;
+    padding: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    background-color: rgba(249, 249, 249, 0.9);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70px; /* Пространство для Navbar */
+}
+
+.auth-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.input-group {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.input-group input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.input-group input:focus {
+    border-color: #234132;
+}
+
+.auth-button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background-color: #234132;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(24, 45, 35, 1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.auth-button:hover {
+    background-color: #1a3128;
+    transform: translateY(-2px);
+}
+
+.auth-button:active {
+    transform: translateY(0);
+}
+
+.toggle-button {
+    margin-top: 20px;
+    background: none;
+    border: none;
+    color: #234132;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.toggle-button:hover {
+    color: #1a3128;
+    transform: translateY(-2px);
+}
+
+.error {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+/* Стили для Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #316148;
+    padding: 10px 15px;
+    height: 50px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.navbar-logo {
+    flex-shrink: 0;
+}
+
+.navbar-logo-img {
+    height: 40px;
+    width: auto;
+    max-width: 100%;
+}
+
+.navbar-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-left: 10px;
+}
+
+.navbar-link {
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+button.navbar-link {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.login-prompt {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 10px 20px;
+    margin-top: 10px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #f5c6cb;
+    border-radius: 5px;
+    position: fixed;
+    top: 70px; /* Just below the navbar */
+    left: 0;
+    right: 0;
+    width: 50%;
+    max-width: 100vw; /* Ensures no overflow */
+    box-sizing: border-box; /* Prevents cutting off content */
+    z-index: 999;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.navbar-link:hover::after {
+    transform: scaleX(1);
+}
+
+.navbar-icon-img {
+    height: 25px;
+    width: auto;
+    max-width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.navbar-icon-img:hover {
+    transform: scale(1.1);
+}
+
+/* Log Out button */
+.logout {
+    background-color: #1a3128; /* Primary color */
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
+}
+
+.logout:hover {
+    background-color: red; /* Red color on hover */
+}
+
+.logout:active {
+    transform: translateY(0); /* Reset lift when clicked */
+}
+
+/* Стили для главной страницы */
+.body-container {
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 70px; /* Отступ сверху для Navbar */
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.body-container p {
+    font-size: 2.3rem;
+    color: rgba(93, 130, 111, 1);
+}
+
+.body-container button {
+    font-weight: 500;
+    height: 40px;
+    width: 150px;
+    background-color: rgba(93, 130, 111, 1);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px; /* Увеличенный шрифт */
+}
+
+/* Стили для страницы профиля */
+.profile-container {
+    padding-top: 70px; /* Отступ сверху для Navbar */
+}
+
+.user-info {
+    width: 460px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.user-info img {
+    width: 180px;
+}
+
+.user-info p {
+    font-size: 1.1rem; /* Увеличен размер текста */
+    font-weight: 500;
+    color: black; /* Изменен цвет текста на черный */
+}
+
+.event-info p {
+    font-size: 1.2rem;
+    font-weight: 450;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.event-box {
+    width: 457px;
+    background-color: rgba(93, 130, 111, 1); /* Цвет блока */
+    border-radius: 15px; /* Увеличенный радиус закругления */
+    padding: 20px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.event-title {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: black;
+    margin-bottom: 15px;
+}
+
+.event-description {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.event-description h5 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: black;
+}
+
+.event-description p {
+    font-size: 1rem;
+    font-weight: normal;
+    color: black;
+}
+
+.event-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.event-footer-info {
+    text-align: left;
+}
+
+.event-footer-info p {
+    font-size: 1rem;
+    font-weight: bold;
+    color: black;
+}
+
+.event-footer button {
+    background-color: #1a3128;
+    width: 100px;
+    font-size: 1rem;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+.event-footer button:hover {
+    background-color: rgba(200, 45, 60, 1);
+}
