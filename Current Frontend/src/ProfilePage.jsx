@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import Navbar from './Navbar';
 import profileIcon from './assets/profile.svg';
 import axios from 'axios';
-import './EventCard.css'; // Используем ваш CSS для стилей карточек событий
-import './ProfilePage.css'; // Используем ваш CSS для страницы профиля
+import './EventCard.css'; // Using your CSS for event card styles
+import './ProfilePage.css'; // Using your CSS for profile page styles
 
 const ProfilePage = () => {
     // State for storing profile data and error state
@@ -71,7 +71,8 @@ const ProfilePage = () => {
     return (
         <>
             <Navbar />
-            <div className="body-container">
+            <div className="profile-container">
+                {/* User information section */}
                 <div className="user-info">
                     <img src={profileIcon} alt="Profile" className="profile-icon-large" />
                     <span>
@@ -80,6 +81,8 @@ const ProfilePage = () => {
                         <p className="user-info-text">E-Mail: {profileData.email}</p>
                     </span>
                 </div>
+
+                {/* Joined events section */}
                 <div className="event-info">
                     <h2>Joined Events</h2>
                     {loading ? (
@@ -89,19 +92,20 @@ const ProfilePage = () => {
                     ) : joinedEvents.length === 0 ? (
                         <p>You have not joined any events yet.</p>
                     ) : (
-                        joinedEvents.map((event) => (
-                            <div key={event.id} className="profile-event-card"> {/* Используем ваш класс для стилей */}
-                                <h3>{event.title}</h3>
-                                <p>{event.description}</p>
-                                <p><strong>Creator:</strong> {event.creatorName}</p>
-                                <p><strong>Date:</strong> {event.date}</p>
-                                <p><strong>Start Time:</strong> {event.startTime}</p>
-                                <p><strong>End Time:</strong> {event.endTime}</p>
-                                <p><strong>Location:</strong> {event.location}</p>
-                                {/*<p><strong>Rating:</strong> {event.rating || 'N/A'}</p>*/}
-                                <button onClick={() => handleLeaveEvent(event.id, event.title)}>Leave Event</button>
-                            </div>
-                        ))
+                        <div className="events-list">
+                            {joinedEvents.map((event) => (
+                                <div key={event.id} className="profile-event-card">
+                                    <h3>{event.title}</h3>
+                                    <p>{event.description}</p>
+                                    <p><strong>Creator:</strong> {event.creatorName}</p>
+                                    <p><strong>Date:</strong> {event.date}</p>
+                                    <p><strong>Start Time:</strong> {event.startTime}</p>
+                                    <p><strong>End Time:</strong> {event.endTime}</p>
+                                    <p><strong>Location:</strong> {event.location}</p>
+                                    <button onClick={() => handleLeaveEvent(event.id, event.title)}>Leave Event</button>
+                                </div>
+                            ))}
+                        </div>
                     )}
                 </div>
             </div>
