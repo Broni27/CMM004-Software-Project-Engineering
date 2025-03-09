@@ -163,7 +163,7 @@ const HomePage = () => {
                                 <p><strong>Date:</strong> {event.date}</p>
                                 <p><strong>Start Time:</strong> {event.startTime}</p>
                                 <p><strong>End Time:</strong> {event.endTime}</p>
-                                <p><strong>Capacity:</strong> {event.capacity || 'Event is full!'}</p>
+                                <p><strong>Capacity:</strong> {event.capacity || 'Event is currently full!'}</p>
                                 <p><strong>Location:</strong> {event.location}</p>
                                 {/*<p><strong>Rating:</strong> {event.rating || 'N/A'}</p>*/}
                                 <button

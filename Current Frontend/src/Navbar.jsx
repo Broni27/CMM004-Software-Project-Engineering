@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
-import logo from './assets/logo.svg';
+//import logo from './assets/logo.svg';
 import profile from './assets/profile.svg';
 import './Styles.css'; // Import the CSS file for Navbar styles
 import userService from "./API/UserService.js";
@@ -71,10 +71,11 @@ const Navbar = () => {
                 </div>
             )}
 
+            
             <nav className="navbar">
-                <div className="navbar-logo">
+                {/*<div className="navbar-logo">
                     <img src={logo} alt="Logo" className="navbar-logo-img" />
-                </div>
+                </div>*/}
 
                 <div className="navbar-links">
                     <Link to="/home" className="navbar-link">Home</Link>
