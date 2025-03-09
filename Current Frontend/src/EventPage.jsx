@@ -1,11 +1,39 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import axios from "axios";      //Allows connection to backend through API calls
 import Navbar from "./Navbar"; // Import Navbar
 import "./CreateEventForm.css";
 
 function EventPage() {
     const [showForm, setShowForm] = useState(false); // State to control form visibility
+    const [events, setEvents] = useState([]);        //Stores created events
     const [error, setError] = useState(null);
+
+    const fetchUserEvents = async () => {
+        const token = localStorage.getItem("token");
+        
+        //axios must retrieve token for get request to work
+        if (!token) {
+            setError("Unexpected authentication error. Please log in again");
+            return;
+        }
+
+        try {
+            const response = await axios.get("http://localhost:5088/api/event/created", {
+                headers: {
+                    Authorization: `Bearer ${token}`
+                }
+            });
+    
+            setEvents(response.data);
+        } catch (err) {
+            console.error("Error fetching events:", err);
+            setError("Failed to load events. Please try again later.");
+        }
+    };
+
+    useEffect(() => {
+        fetchUserEvents();
+    }, []);
 
     const handleFormSubmit = async (event) => {
         event.preventDefault();
@@ -24,7 +52,7 @@ function EventPage() {
             alert("Please fill all fields");
             return;
         }
-        
+
         const formData = new FormData(form);
         const eventData = {
             title: formData.get("eventName"),
@@ -60,12 +88,13 @@ function EventPage() {
                 alert("Event created successfully!");
                 console.log("Form submitted");
                 setShowForm(false); // Hide the form after submission
-                form.reset(); //Clears form fields
+                form.reset();       //Clears form fields
+                fetchUserEvents();  //Refresh event list
             } else {
                 alert("Failed to create event. Please try again.");
             }
         } catch (err) {
-            setError("Error creating event. Please try agian later.");
+            setError("Error creating event. Please try again later.");
             console.error("Event creation error:", err);
         }
     };
@@ -77,6 +106,30 @@ function EventPage() {
 
             {/* Add padding to the main content to avoid overlap with Navbar */}
             <div className="event-page-container" style={{ paddingTop: "80px" }}>
+                {/* Show created events list only if form is NOT open */}
+                {!showForm && (
+                    <div>
+                        <h2>Your Created Events</h2>
+                        {events.length === 0 ? (
+                            <p>You haven't created any events yet! Click the button below to start creating events</p>
+                        ) : (
+                            events.map((event) => (
+                                <div key={event.id} className="event-card">
+                                    <h3>{event.title}</h3>
+                                    <p>{event.description}</p>
+                                    <p><strong>Creator:</strong> {event.creatorName}</p>
+                                    <p><strong>Date:</strong> {event.date}</p>
+                                    <p><strong>Start Time:</strong> {event.startTime}</p>
+                                    <p><strong>End Time:</strong> {event.endTime}</p>
+                                    <p><strong>Capacity:</strong> {event.capacity || 'Event is currently full!'}</p>
+                                    <p><strong>Location:</strong> {event.location}</p>
+                                    {/*<p><strong>Rating:</strong> {event.rating || 'N/A'}</p>*/}
+                                </div>
+                            ))
+                        )}
+                    </div>
+                )}
+                
                 {/* Show "Create Event" button if form is not visible */}
                 {!showForm && (
                     <button className="create-event-button" onClick={() => setShowForm(true)}>
