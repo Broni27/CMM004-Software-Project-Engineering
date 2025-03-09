@@ -98,7 +98,7 @@ const ProfilePage = () => {
                                 <p><strong>Start Time:</strong> {event.startTime}</p>
                                 <p><strong>End Time:</strong> {event.endTime}</p>
                                 <p><strong>Location:</strong> {event.location}</p>
-                                <p><strong>Rating:</strong> {event.rating || 'N/A'}</p>
+                                {/*<p><strong>Rating:</strong> {event.rating || 'N/A'}</p>*/}
                                 <button onClick={() => handleLeaveEvent(event.id, event.title)}>Leave Event</button>
                             </div>
                         ))

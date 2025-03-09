@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Navbar from './Navbar';
 import { useNavigate } from "react-router-dom";
-import axios from 'axios';
+import axios from "axios";      //Allows connection to backend through API calls
 import './EventCard.css'; // Используем ваш CSS для стилей карточек событий
 
 const HomePage = () => {
@@ -165,7 +165,7 @@ const HomePage = () => {
                                 <p><strong>End Time:</strong> {event.endTime}</p>
                                 <p><strong>Capacity:</strong> {event.capacity || 'Event is full!'}</p>
                                 <p><strong>Location:</strong> {event.location}</p>
-                                <p><strong>Rating:</strong> {event.rating || 'N/A'}</p>
+                                {/*<p><strong>Rating:</strong> {event.rating || 'N/A'}</p>*/}
                                 <button
                                     onClick={() => handleEventAction(event.id)}
                                     className={isUserJoined(event.id) ? 'leave-button' : ''}

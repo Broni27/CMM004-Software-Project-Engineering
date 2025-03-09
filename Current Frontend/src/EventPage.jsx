@@ -1,12 +1,15 @@
 import { useState } from "react";
+import axios from "axios";      //Allows connection to backend through API calls
 import Navbar from "./Navbar"; // Import Navbar
 import "./CreateEventForm.css";
 
 function EventPage() {
     const [showForm, setShowForm] = useState(false); // State to control form visibility
+    const [error, setError] = useState(null);
 
-    const handleFormSubmit = (event) => {
+    const handleFormSubmit = async (event) => {
         event.preventDefault();
+
         const form = event.target;
         const isFormValid = Array.from(form.elements).every((element) => {
             return (
@@ -16,12 +19,55 @@ function EventPage() {
                 element.checkValidity()
             );
         });
+
         if (!isFormValid) {
             alert("Please fill all fields");
             return;
         }
-        console.log("Form submitted");
-        setShowForm(false); // Hide the form after submission
+        
+        const formData = new FormData(form);
+        const eventData = {
+            title: formData.get("eventName"),
+            description: formData.get("eventDescription"),
+            date: formData.get("eventDate"),
+            startTime: formData.get("startTime") + ":00",
+            endTime: formData.get("endTime") + ":00",
+            location: formData.get("eventLocation"),
+            capacity: parseInt(formData.get("numberOfAttendees"), 10), //10 converts the int using base 10 decimal
+            rating: null //Omitted in form as of 09/03, backend still expects so it's here for now
+        };
+
+        //axios must retrieve token for post request to work
+        const token = localStorage.getItem("token");
+        if (!token) {
+            alert("Unexpected authentication error. Please log in again.");
+            return;
+        }
+
+        try {
+            const response = await axios.post(
+                "http://localhost:5088/api/event",
+                eventData,
+                {
+                    headers: {
+                        Authorization: `Bearer ${token}`,
+                        "Content-Type": "application/json"
+                    }
+                }
+            );
+
+            if (response.status === 201) {
+                alert("Event created successfully!");
+                console.log("Form submitted");
+                setShowForm(false); // Hide the form after submission
+                form.reset(); //Clears form fields
+            } else {
+                alert("Failed to create event. Please try again.");
+            }
+        } catch (err) {
+            setError("Error creating event. Please try agian later.");
+            console.error("Event creation error:", err);
+        }
     };
 
     return (
@@ -34,7 +80,7 @@ function EventPage() {
                 {/* Show "Create Event" button if form is not visible */}
                 {!showForm && (
                     <button className="create-event-button" onClick={() => setShowForm(true)}>
-                        Create Event
+                        Create Events
                     </button>
                 )}
 

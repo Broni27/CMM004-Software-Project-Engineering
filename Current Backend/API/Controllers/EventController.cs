@@ -17,7 +17,7 @@ namespace API.Controllers
             _eventRepository = eventRepository;
            
         }
-
+        
         [HttpGet]
         public async Task<ActionResult<IEnumerable<EventDto>>> GetEvents() // /api/event
         {
