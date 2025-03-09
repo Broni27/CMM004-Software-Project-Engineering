@@ -1,59 +1,95 @@
-/* Wider event cards for the profile page */
-.profile-event-card {
-    background-color: #f9f9f9; /* Light background for the card */
-    border: 1px solid #ddd; /* Subtle border */
+/* Container for the entire profile page */
+.profile-container {
+    padding-top: 70px; /* Top padding to avoid overlap with Navbar */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh; /* Ensure the container takes at least the full height of the viewport */
+    width: 100%;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+/* Styles for the user information section */
+.user-info {
+    width: 90%;
+    max-width: 800px; /* Limit the maximum width */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f9f9f9; /* Light background color */
+    padding: 20px;
     border-radius: 10px; /* Rounded corners */
-    padding: 20px; /* Spacing inside the card */
-    margin-bottom: 20px; /* Space between cards */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
-    width: 90%; /* Make the card wider */
-    max-width: 1000px; /* Maximum width for the card */
-    margin-left: auto;
-    margin-right: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin-bottom: 20px; /* Bottom margin for spacing */
+    margin-top: 20px; /* Top margin for spacing */
 }
 
-/* Hover effect for the event card */
-.profile-event-card:hover {
-    transform: translateY(-5px); /* Slight lift on hover */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+.user-info img {
+    width: 100px; /* Set a fixed width for the profile icon */
+    height: 100px;
+    border-radius: 50%; /* Make the icon circular */
 }
 
-/* Title of the event */
+.user-info p {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #333; /* Dark text color */
+    margin: 5px 0; /* Remove extra margins */
+}
+
+/* Styles for the events section */
+.event-info {
+    width: 90%;
+    max-width: 800px; /* Limit the maximum width */
+    background-color: #f9f9f9; /* Light background color */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin-bottom: 20px; /* Bottom margin for spacing */
+}
+
+/* Container for the list of events */
+.events-list {
+    max-height: 500px; /* Set a maximum height for the list */
+    overflow-y: auto; /* Enable vertical scrolling if the content exceeds the height */
+    padding-right: 10px; /* Add padding to avoid overlap with the scrollbar */
+}
+
+/* Styles for individual event cards */
+.profile-event-card {
+    background-color: #fff; /* White background for the card */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 15px;
+    margin-bottom: 15px; /* Bottom margin for spacing between cards */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
 .profile-event-card h3 {
     color: #316148; /* Primary color for the title */
-    margin-bottom: 10px; /* Space below the title */
-    font-size: 24px; /* Larger font size for the title */
-    text-align: center; /* Center the event title */
+    margin-bottom: 10px; /* Bottom margin for spacing */
 }
 
-/* Event details */
 .profile-event-card p {
     color: #234132; /* Darker shade for text */
-    margin: 8px 0; /* Spacing between paragraphs */
-    font-size: 16px; /* Standard font size for details */
+    margin: 5px 0; /* Remove extra margins */
 }
 
-/* Strong text (e.g., labels like "Creator:", "Date:") */
-.profile-event-card p strong {
-    color: #316148; /* Primary color for emphasis */
-}
-
-/* Leave button */
+/* Styles for the "Leave Event" button */
 .profile-event-card button {
     background-color: #316148; /* Primary color for the button */
     color: white;
     border: none;
-    padding: 10px 20px;
-    font-size: 16px;
+    padding: 8px 16px;
+    font-size: 14px;
     cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-    margin-top: 15px; /* Space above the button */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    margin-top: 10px; /* Top margin for spacing */
     width: 100%; /* Full width button */
 }
 
-/* Hover effect for the button */
+/* Hover effect for the "Leave Event" button */
 .profile-event-card button:hover {
     background-color: #ff0000; /* Red color on hover */
 }

@@ -1,8 +1,8 @@
-import React, {useEffect, useState} from 'react';
+import React, { useEffect, useState } from 'react';
 import Navbar from './Navbar.jsx';
-import './Styles.css';
+import './Styles.css'; // Подключаем общие стили
 import UserService from "./API/UserService.js";
-import {useNavigate} from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const AuthPage = () => {
     const [isLogin, setIsLogin] = useState(true);
@@ -13,7 +13,7 @@ const AuthPage = () => {
         confirmPassword: '',
         realname: ''
     });
-    const [error, setError] = useState(''); // Adds error state for user validation handling
+    const [error, setError] = useState('');
     const navigate = useNavigate();
 
     const toggleForm = () => {
@@ -25,7 +25,7 @@ const AuthPage = () => {
             confirmPassword: '',
             realname: ''
         });
-        setError(''); // Resets error state upon toggling between login/register forms
+        setError('');
     };
 
     const handleChange = (e) => {
@@ -121,8 +121,7 @@ const AuthPage = () => {
     return (
         <>
             <Navbar />
-
-            <div className="auth-container" style={{ marginTop: '70px' }}>
+            <div className="auth-container">
                 <h2>{isLogin ? 'Login' : 'Register'}</h2>
                 <form onSubmit={handleSubmit} className="auth-form">
                     {!isLogin && (
@@ -186,9 +185,8 @@ const AuthPage = () => {
                             />
                         </div>
                     )}
-                    {/* Show error message if there's an error */}
                     {error && (
-                        <div className="error-message" style={{ color: 'red', marginBottom: '10px' }}>
+                        <div className="error-message">
                             {error}
                         </div>
                     )}
