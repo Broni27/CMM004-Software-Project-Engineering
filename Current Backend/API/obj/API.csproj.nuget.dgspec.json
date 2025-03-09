@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\broni\\Documents\\GitHub\\Software-Project-Engineering\\Current Backend\\API\\API.csproj": {}
+    "D:\\Masters Semester 2 files\\GitHub\\Software-Project-Engineering\\Current Backend\\API\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\broni\\Documents\\GitHub\\Software-Project-Engineering\\Current Backend\\API\\API.csproj": {
+    "D:\\Masters Semester 2 files\\GitHub\\Software-Project-Engineering\\Current Backend\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\broni\\Documents\\GitHub\\Software-Project-Engineering\\Current Backend\\API\\API.csproj",
+        "projectUniqueName": "D:\\Masters Semester 2 files\\GitHub\\Software-Project-Engineering\\Current Backend\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\broni\\Documents\\GitHub\\Software-Project-Engineering\\Current Backend\\API\\API.csproj",
-        "packagesPath": "C:\\Users\\broni\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\broni\\Documents\\GitHub\\Software-Project-Engineering\\Current Backend\\API\\obj\\",
+        "projectPath": "D:\\Masters Semester 2 files\\GitHub\\Software-Project-Engineering\\Current Backend\\API\\API.csproj",
+        "packagesPath": "C:\\Users\\karol\\.nuget\\packages\\",
+        "outputPath": "D:\\Masters Semester 2 files\\GitHub\\Software-Project-Engineering\\Current Backend\\API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\broni\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\karol\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"

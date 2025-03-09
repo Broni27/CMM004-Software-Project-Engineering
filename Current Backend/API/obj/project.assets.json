@@ -3461,19 +3461,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\broni\\.nuget\\packages\\": {}
+    "C:\\Users\\karol\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\broni\\Documents\\GitHub\\Software-Project-Engineering\\Current Backend\\API\\API.csproj",
+      "projectUniqueName": "D:\\Masters Semester 2 files\\GitHub\\Software-Project-Engineering\\Current Backend\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "C:\\Users\\broni\\Documents\\GitHub\\Software-Project-Engineering\\Current Backend\\API\\API.csproj",
-      "packagesPath": "C:\\Users\\broni\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\broni\\Documents\\GitHub\\Software-Project-Engineering\\Current Backend\\API\\obj\\",
+      "projectPath": "D:\\Masters Semester 2 files\\GitHub\\Software-Project-Engineering\\Current Backend\\API\\API.csproj",
+      "packagesPath": "C:\\Users\\karol\\.nuget\\packages\\",
+      "outputPath": "D:\\Masters Semester 2 files\\GitHub\\Software-Project-Engineering\\Current Backend\\API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\broni\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\karol\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
@@ -3546,5 +3546,13 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1900",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json."
+    }
+  ]
 }

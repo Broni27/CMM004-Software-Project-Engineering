@@ -7,8 +7,25 @@ import { useNavigate } from "react-router-dom"; // Import useNavigate for naviga
 function EventPage() {
     const [showForm, setShowForm] = useState(false); // State to control form visibility
     const [events, setEvents] = useState([]); // Stores created events
-    const [error, setError] = useState(null);
+    const [error, setError] = useState(null);   //State for errors
+    const [editingEventId, setEditingEventId] = useState(null);    //State for editing events
+
+    //State for holding form data whilst editing event
+    const [formData, setFormData] = useState({
+        title: "",
+        description: "",
+        date: "",
+        startTime: "",
+        endTime: "",
+        location: "",
+        capacity: "",
+    });
+
     const navigate = useNavigate(); // Hook for navigation
+
+    useEffect(() => {
+        fetchUserEvents();
+    }, []);
 
     const fetchUserEvents = async () => {
         const token = localStorage.getItem("token");
@@ -33,9 +50,30 @@ function EventPage() {
         }
     };
 
-    useEffect(() => {
-        fetchUserEvents();
-    }, []);
+    const handleEditEvent = (event) => {
+        /*Formatting fix for time fields (frontend - 00:00, backend - 00:00:00)
+        This would cause issues when editing events, when creating an event a :00 is appended automatically to allow for backend storing
+        But, upon editing another :00 would append, causing only 1 edit to be possible on an event
+        This fixes that*/
+        const formattedStartTime = event.startTime && event.startTime.length > 5
+            ? event.startTime.substring(0, 5)
+            : event.startTime;
+        const formattedEndTime = event.endTime && event.endTime.length > 5
+            ? event.endTime.substring(0, 5)
+            : event.endTime;
+
+        setFormData({
+            title: event.title,
+            description: event.description,
+            date: event.date,
+            startTime: formattedStartTime,
+            endTime: formattedEndTime,
+            location: event.location,
+            capacity: event.capacity,
+        });
+        setEditingEventId(event.id);    //Stores which event is being edited
+        setShowForm(true);
+    };
 
     const handleDeleteEvent = async (eventId) => {
         //Get event details to allow for display of event name in confirmation message
@@ -67,6 +105,7 @@ function EventPage() {
         }
     };
 
+    //Handles event create and edit
     const handleFormSubmit = async (event) => {
         event.preventDefault();
 
@@ -85,19 +124,18 @@ function EventPage() {
             return;
         }
 
-        const formData = new FormData(form);
         const eventData = {
-            title: formData.get("eventName"),
-            description: formData.get("eventDescription"),
-            date: formData.get("eventDate"),
-            startTime: formData.get("startTime") + ":00",
-            endTime: formData.get("endTime") + ":00",
-            location: formData.get("eventLocation"),
-            capacity: parseInt(formData.get("numberOfAttendees"), 10), // 10 converts the int using base 10 decimal
+            title: formData.title,
+            description: formData.description,
+            date: formData.date,
+            startTime: formData.startTime + ":00",
+            endTime: formData.endTime + ":00",
+            location: formData.location,
+            capacity: parseInt(formData.capacity, 10),
             rating: null // Omitted in form as of 09/03, backend still expects so it's here for now
         };
 
-        // Axios must retrieve token for POST request to work
+        // Axios must retrieve token for POST/PUT request to work
         const token = localStorage.getItem("token");
         if (!token) {
             alert("Unexpected authentication error. Please log in again.");
@@ -105,29 +143,56 @@ function EventPage() {
         }
 
         try {
-            const response = await axios.post(
-                "http://localhost:5088/api/event",
-                eventData,
-                {
-                    headers: {
-                        Authorization: `Bearer ${token}`,
-                        "Content-Type": "application/json"
-                    }
-                }
-            );
+            let response;
 
-            if (response.status === 201) {
-                alert("Event created successfully!");
-                console.log("Form submitted");
+            if (editingEventId) {
+                //Edit event using PUT
+                response = await axios.put(
+                    `http://localhost:5088/api/event/${editingEventId}`,
+                    eventData,
+                    {
+                        headers: {
+                            Authorization: `Bearer ${token}`,
+                            "Content-Type": "application/json"
+                        }
+                    }
+                );
+            } else {
+                //Create new event using POST
+                response = await axios.post(
+                    "http://localhost:5088/api/event",
+                    eventData,
+                    {
+                        headers: {
+                            Authorization: `Bearer ${token}`,
+                            "Content-Type": "application/json"
+                        }
+                    }
+                );
+            }
+
+            if (response.status >= 200 && response.status < 300) //Detects all success codes
+            {
+                alert(editingEventId ? "Event edited successfully!" : "Event created successfully!");
                 setShowForm(false); // Hide the form after submission
-                form.reset(); // Clears form fields
+                //Reset form data
+                setEditingEventId(null);
+                setFormData({
+                    title: "",
+                    description: "",
+                    date: "",
+                    startTime: "",
+                    endTime: "",
+                    location: "",
+                    capacity: "",
+                });
                 fetchUserEvents(); // Refresh event list
             } else {
-                alert("Failed to create event. Please try again.");
+                alert("Failed to submit event. Please try again.");
             }
         } catch (err) {
-            setError("Error creating event. Please try again later.");
-            console.error("Event creation error:", err);
+            setError("Error submitting event. Please try again later.");
+            console.error("Event submission error:", err);
         }
     };
 
@@ -158,6 +223,9 @@ function EventPage() {
                                     {/*<p><strong>Rating:</strong> {event.rating || 'N/A'}</p>*/}
 
                                     <button className="submit-button"
+                                        onClick={() => handleEditEvent(event)}>Edit Event</button>
+
+                                    <button className="submit-button"
                                         onClick={() => handleDeleteEvent(event.id)}>Delete Event</button>
                                 </div>
                             ))
@@ -167,7 +235,22 @@ function EventPage() {
 
                 {/* Show "Create Event" button if form is not visible */}
                 {!showForm && (
-                    <button className="create-event-button" onClick={() => setShowForm(true)}>
+                    <button className="create-event-button"
+                        onClick={() => {
+                            //Resets form for new event creation
+                            setEditingEventId(null);
+                            setFormData({
+                                title: "",
+                                description: "",
+                                date: "",
+                                startTime: "",
+                                endTime: "",
+                                location: "",
+                                capacity: "",
+                            });
+                            setShowForm(true);
+                        }}
+                    >
                         Create Events
                     </button>
                 )}
@@ -179,7 +262,11 @@ function EventPage() {
                         <button
                             type="button"
                             className="back-button"
-                            onClick={() => setShowForm(false)} // Hide the form and return to the events list
+                            // Hide the form and return to the events list
+                            onClick={() => {
+                                setShowForm(false);
+                                setEditingEventId(null);
+                            }}
                         >
                             Back to Events
                         </button>
@@ -191,6 +278,9 @@ function EventPage() {
                                 id="eventName"
                                 name="eventName"
                                 placeholder="Enter event name"
+                                //Fill edit form with values of existing event
+                                value={formData.title}
+                                onChange={(e) => setFormData({ ...formData, title: e.target.value})}
                                 required
                             />
                         </div>
@@ -200,6 +290,8 @@ function EventPage() {
                                 id="eventDescription"
                                 name="eventDescription"
                                 placeholder="Describe your event"
+                                value={formData.description}
+                                onChange={(e) => setFormData({ ...formData, description: e.target.value})}
                                 required
                             />
                         </div>
@@ -209,6 +301,8 @@ function EventPage() {
                                 type="date"
                                 id="eventDate"
                                 name="eventDate"
+                                value={formData.date}
+                                onChange={(e) => setFormData({ ...formData, date: e.target.value})}
                                 required
                             />
                         </div>
@@ -218,6 +312,8 @@ function EventPage() {
                                 type="time"
                                 id="startTime"
                                 name="startTime"
+                                value={formData.startTime}
+                                onChange={(e) => setFormData({ ...formData, startTime: e.target.value})}
                                 required
                             />
                         </div>
@@ -227,6 +323,8 @@ function EventPage() {
                                 type="time"
                                 id="endTime"
                                 name="endTime"
+                                value={formData.endTime}
+                                onChange={(e) => setFormData({ ...formData, endTime: e.target.value})}
                                 required
                             />
                         </div>
@@ -237,6 +335,8 @@ function EventPage() {
                                 id="eventLocation"
                                 name="eventLocation"
                                 placeholder="Enter event location"
+                                value={formData.location}
+                                onChange={(e) => setFormData({ ...formData, location: e.target.value})}
                                 required
                             />
                         </div>
@@ -247,6 +347,8 @@ function EventPage() {
                                 id="numberOfAttendees"
                                 name="numberOfAttendees"
                                 placeholder="Enter event capacity"
+                                value={formData.capacity}
+                                onChange={(e) => setFormData({ ...formData, capacity: e.target.value})}
                                 required
                             />
                         </div>
