@@ -37,6 +37,36 @@ function EventPage() {
         fetchUserEvents();
     }, []);
 
+    const handleDeleteEvent = async (eventId) => {
+        //Get event details to allow for display of event name in confirmation message
+        const eventToDelete = events.find(ev => ev.id === eventId);
+
+        const token = localStorage.getItem("token");
+        if (!token) {
+            setError("Unexpected authentication error. Please log in again");
+            return;
+        }
+
+        const confirmDelete = window.confirm(`Are you sure you want to delete the event?: ${eventToDelete?.title || 'Unknown Event'}`);
+        if (!confirmDelete) return;
+
+        try {
+            await axios.delete(`http://localhost:5088/api/event/${eventId}`, {
+                headers: {
+                    Authorization: `Bearer ${token}`,
+                    "Content-Type": "application/json"
+                }
+            });
+
+            //Remove deleted event from state with no refresh
+            setEvents(events.filter(event => event.id !== eventId));
+            alert(`You have successfully deleted the event: ${eventToDelete?.title || 'Unknown Event'}!`);
+        } catch (err) {
+            console.error("Error deleting event:", err.response ? err.response.data : err.message);
+            alert(`Failed to delete event. Server responded with: ${err.response ? JSON.stringify(err.response.data) : err.message}`);
+        }
+    };
+
     const handleFormSubmit = async (event) => {
         event.preventDefault();
 
@@ -126,6 +156,9 @@ function EventPage() {
                                     <p><strong>Capacity:</strong> {event.capacity || 'Event is currently full!'}</p>
                                     <p><strong>Location:</strong> {event.location}</p>
                                     {/*<p><strong>Rating:</strong> {event.rating || 'N/A'}</p>*/}
+
+                                    <button className="submit-button"
+                                        onClick={() => handleDeleteEvent(event.id)}>Delete Event</button>
                                 </div>
                             ))
                         )}
