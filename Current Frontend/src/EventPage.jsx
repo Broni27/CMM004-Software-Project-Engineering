@@ -1,17 +1,19 @@
 import { useState, useEffect } from "react";
-import axios from "axios";      //Allows connection to backend through API calls
+import axios from "axios"; // Allows connection to backend through API calls
 import Navbar from "./Navbar"; // Import Navbar
-import "./CreateEventForm.css";
+import "./CreateEventForm.css"; // Import CSS for the form
+import { useNavigate } from "react-router-dom"; // Import useNavigate for navigation
 
 function EventPage() {
     const [showForm, setShowForm] = useState(false); // State to control form visibility
-    const [events, setEvents] = useState([]);        //Stores created events
+    const [events, setEvents] = useState([]); // Stores created events
     const [error, setError] = useState(null);
+    const navigate = useNavigate(); // Hook for navigation
 
     const fetchUserEvents = async () => {
         const token = localStorage.getItem("token");
 
-        //axios must retrieve token for get request to work
+        // Axios must retrieve token for GET request to work
         if (!token) {
             setError("Unexpected authentication error. Please log in again");
             return;
@@ -91,11 +93,11 @@ function EventPage() {
             startTime: formData.get("startTime") + ":00",
             endTime: formData.get("endTime") + ":00",
             location: formData.get("eventLocation"),
-            capacity: parseInt(formData.get("numberOfAttendees"), 10), //10 converts the int using base 10 decimal
-            rating: null //Omitted in form as of 09/03, backend still expects so it's here for now
+            capacity: parseInt(formData.get("numberOfAttendees"), 10), // 10 converts the int using base 10 decimal
+            rating: null // Omitted in form as of 09/03, backend still expects so it's here for now
         };
 
-        //axios must retrieve token for post request to work
+        // Axios must retrieve token for POST request to work
         const token = localStorage.getItem("token");
         if (!token) {
             alert("Unexpected authentication error. Please log in again.");
@@ -118,8 +120,8 @@ function EventPage() {
                 alert("Event created successfully!");
                 console.log("Form submitted");
                 setShowForm(false); // Hide the form after submission
-                form.reset();       //Clears form fields
-                fetchUserEvents();  //Refresh event list
+                form.reset(); // Clears form fields
+                fetchUserEvents(); // Refresh event list
             } else {
                 alert("Failed to create event. Please try again.");
             }
@@ -173,6 +175,15 @@ function EventPage() {
                 {/* Show the form when "Create Event" button is clicked */}
                 {showForm && (
                     <form className="create-event-form" onSubmit={handleFormSubmit}>
+                        {/* Back button to return to the events list */}
+                        <button
+                            type="button"
+                            className="back-button"
+                            onClick={() => setShowForm(false)} // Hide the form and return to the events list
+                        >
+                            Back to Events
+                        </button>
+
                         <div className="form-group">
                             <label htmlFor="eventName">Event Name:</label>
                             <input

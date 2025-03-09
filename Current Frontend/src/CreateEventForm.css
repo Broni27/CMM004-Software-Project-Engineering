@@ -119,3 +119,21 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+/* Style for the back button */
+.back-button {
+  background-color: #316148; /* Primary color */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  margin-bottom: 20px; /* Bottom margin */
+  width: 100%; /* Full width button */
+}
+
+.back-button:hover {
+  background-color: #234132; /* Darker shade for hover */
+}
