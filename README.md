@@ -10,7 +10,7 @@ To be able to run the React web application:
   <li>Wait until the command runs, then type npm run dev and press enter</li>
 </ol>
 
-The result should be a localhost link, open this in your browser, and you can now access our web application!
+The result should be a localhost link (usually http://localhost:5173), open this in your browser, and you can now access our web application!
 
 ## Error Troubleshooting
 ##### If the web application does not correctly redirect to different webpages
@@ -60,6 +60,7 @@ Ensure your system meets the requirements before running this application.
     ```
     dotnet run
     ```
+*Alternatively, you may open the project folder in an IDE of your choice (e.g. VS Code) and directly run the Program.cs file*
 
 2. The API will be available at:
     ```
@@ -73,13 +74,13 @@ Ensure your system meets the requirements before running this application.
     
 ---
 
-## Contact
+# Contact
 
 For any issues or further instructions, please contact the project development team.
 
 ---
 
-## License
+# License
 
 This project is licensed under MIT.
 
