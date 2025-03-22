@@ -391,3 +391,89 @@ body {
     font-size: 0.9em;
     margin-top: 5px;
 }
+
+/* Profile Page Buttons */
+.profile-container button {
+    background-color: #316148; /* Primary green color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin: 10px;
+    width: 200px; /* Fixed width for consistency */
+}
+
+/* Hover effect for Edit Profile and Change Password buttons */
+.profile-container button:hover:not(.delete-button) {
+    background-color: #234132; /* Darker green on hover */
+}
+
+/* Delete Account button */
+.profile-container button.delete-button {
+    background-color: #dc3545; /* Red color for delete button */
+}
+
+/* Hover effect for Delete Account button */
+.profile-container button.delete-button:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
+
+/* Modal styles */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.modal-content h3 {
+    margin-top: 0;
+}
+
+.modal-content button {
+    margin: 5px;
+}
+
+/* Form group styles */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Error message */
+.error-message {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 10px;
+}
