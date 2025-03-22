@@ -7,6 +7,7 @@ using Microsoft.EntityFrameworkCore;
 using System.Security.Cryptography;
 using System.Security.Claims;
 using System.Text;
+using API.Dtos;
 
 namespace API.Controllers
 {
@@ -123,6 +124,107 @@ namespace API.Controllers
                 Email = user.Email,
                 Token = _tokenService.CreateToken(user)
             };
+        }
+
+        [Authorize]
+        [HttpDelete("close")] // api/account/close
+        public async Task<ActionResult> DeleteUser([FromBody] DeleteAccountDto deleteAccountDto)
+        {
+            try
+            {
+                // Retrieve user ID from JWT Token
+                var userIdClaim = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+                if (string.IsNullOrEmpty(userIdClaim) || !int.TryParse(userIdClaim, out int userId))
+                {
+                    return Unauthorized("User not authenticated");
+                }
+
+                // Find user by ID
+                var user = await _context.Users.FindAsync(userId);
+                if (user == null)
+                {
+                    return NotFound($"User with ID {userId} not found.");
+                }
+
+                var passwordSalt = new HMACSHA512(user.PasswordSalt);
+                var computeHash = passwordSalt.ComputeHash(Encoding.UTF8.GetBytes(deleteAccountDto.Password));
+
+                if (!computeHash.SequenceEqual(user.PasswordHash))
+                    return Unauthorized("Invalid password!");
+
+                // Remove user
+                _context.Users.Remove(user);
+                await _context.SaveChangesAsync();
+
+                return NoContent(); // Successfully deleted
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"An error occurred: {ex.Message}");
+            }
+
+        }
+
+        [Authorize]
+        [HttpPut("passwordchange")] //api/account/passwordchange
+        public async Task<ActionResult> UpdatePassword([FromBody] UpdatePasswordDto updatePasswordDto)
+        {
+            // Retrieve user ID from JWT Token
+            var userIdClaim = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+            if (string.IsNullOrEmpty(userIdClaim) || !int.TryParse(userIdClaim, out int userId))
+            {
+                return Unauthorized("User not authenticated");
+            }
+
+            // Find user by ID
+            var user = await _context.Users.FindAsync(userId);
+            if (user == null)
+            {
+                return NotFound($"User with ID {userId} not found.");
+            }
+
+            var passwordSalt = new HMACSHA512(user.PasswordSalt);
+            var computeHash = passwordSalt.ComputeHash(Encoding.UTF8.GetBytes(updatePasswordDto.Password));
+
+            if (!computeHash.SequenceEqual(user.PasswordHash))
+                return Unauthorized("Invalid password!");
+
+            var signingKey = new HMACSHA512();
+            user.PasswordHash = signingKey.ComputeHash(Encoding.UTF8.GetBytes(updatePasswordDto.NewPassword));
+            user.PasswordSalt = signingKey.Key;
+            
+            await _context.SaveChangesAsync();
+            return NoContent();
+
+        }
+
+        [Authorize]
+        [HttpPut("profile/update")] //api/acount/profile/update
+        public async Task<ActionResult<UserDto>> UpdateProfile([FromBody] UpdateUserDto updateUserDto)
+        {
+            //Retrieve user from JWT Token
+            var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+
+            if (string.IsNullOrEmpty(userId))
+            {
+                return Unauthorized("User not authenticated");
+            }
+
+            //Finds user by ID
+            var user = await _context.Users.FirstOrDefaultAsync(x => x.Id.ToString() == userId);
+
+            if (user == null)
+            {
+                return Unauthorized("User not found");
+            }
+
+            user.Username = updateUserDto.Username;
+            user.Email = updateUserDto.Email;
+            user.Realname = updateUserDto.Realname;
+            await _context.SaveChangesAsync();
+
+            return NoContent();
+
         }
     }
 }

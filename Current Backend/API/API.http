@@ -7,6 +7,16 @@ Content-Type: application/json
 
 {
     "email":"testuser@example.com",
+    "password":"Test@124"
+}
+
+###
+//User login
+POST {{API_HostAddress}}/api/account/login
+Content-Type: application/json
+
+{
+    "email":"testuser9X@example.com",
     "password":"Test@123"
 }
 
@@ -38,17 +48,17 @@ Authorization: Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiI4IiwiZ
 //User creates an event
 POST {{API_HostAddress}}/api/event/
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiI4IiwiZW1haWwiOiJ0ZXN0dXNlckBleGFtcGxlLmNvbSIsIm5iZiI6MTc0MTQyMTU3OCwiZXhwIjoxNzQyMDI2Mzc4LCJpYXQiOjE3NDE0MjE1Nzh9.egXSIl2dGuSLofI4xYe7czB5eY_i5IaryuqiJziy_atgr3I2ZrT_RErZ7Ak0ZzwWmlymfoAe2K8dCsz8h2c6fA
+Authorization: Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIxMCIsImVtYWlsIjoidGVzdHVzZXIxMEBleGFtcGxlLmNvbSIsIm5iZiI6MTc0MjYzNTg2NSwiZXhwIjoxNzQzMjQwNjY1LCJpYXQiOjE3NDI2MzU4NjV9.f4vL2AQmGICTuUtM0Up4sIKb2vbnw20lkjU81t44lw_TLU5WbnHkKmbpPBM2SScsT8r7mIIgn9sUl-MquSpxyg
 
 {
     "Title":"Event02",
-    "Description":"Event01 Description",
+    "Description":"Event02 Description",
     "Date":"2025-03-08",
     "StartTime":"10:00:00",
     "EndTime":"12:00:00",
     "Location":"TBC",
     "Capacity":30,
-    "CreatorId":8
+    "CreatorId":10
 }
 ###
 //User joins an event
@@ -84,3 +94,36 @@ Authorization: Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiI4IiwiZ
 DELETE {{API_HostAddress}}/api/event/2
 Accept: application/json
 Authorization: Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiI4IiwiZW1haWwiOiJ0ZXN0dXNlckBleGFtcGxlLmNvbSIsIm5iZiI6MTc0MTQyMTU3OCwiZXhwIjoxNzQyMDI2Mzc4LCJpYXQiOjE3NDE0MjE1Nzh9.egXSIl2dGuSLofI4xYe7czB5eY_i5IaryuqiJziy_atgr3I2ZrT_RErZ7Ak0ZzwWmlymfoAe2K8dCsz8h2c6fA
+
+###
+//User close his account
+DELETE {{API_HostAddress}}/api/account/close
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIxMCIsImVtYWlsIjoidGVzdHVzZXIxMEBleGFtcGxlLmNvbSIsIm5iZiI6MTc0MjYzNTg2NSwiZXhwIjoxNzQzMjQwNjY1LCJpYXQiOjE3NDI2MzU4NjV9.f4vL2AQmGICTuUtM0Up4sIKb2vbnw20lkjU81t44lw_TLU5WbnHkKmbpPBM2SScsT8r7mIIgn9sUl-MquSpxyg
+
+{
+    "Password":"Test@123"
+}
+
+###
+//User updates his password
+PUT {{API_HostAddress}}/api/account/passwordchange
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiI4IiwiZW1haWwiOiJ0ZXN0dXNlckBleGFtcGxlLmNvbSIsIm5iZiI6MTc0MjYzNTUxNywiZXhwIjoxNzQzMjQwMzE3LCJpYXQiOjE3NDI2MzU1MTd9.eBdYZklp96-XF-qIDi9Z4-UpLGue3tWuAxG7iSGiYlPt-riWRzGyJLC8tu_jC8iFb3Lh6Gv9aFmEIwNeHAppkw
+
+{
+    "Password":"Test@123",
+    "NewPassword":"Test@124"
+}
+
+###
+//User updates his profile
+PUT {{API_HostAddress}}/api/account/profile/update
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiI5IiwiZW1haWwiOiJ0ZXN0dXNlcjlAZXhhbXBsZS5jb20iLCJuYmYiOjE3NDI2MzY0ODYsImV4cCI6MTc0MzI0MTI4NiwiaWF0IjoxNzQyNjM2NDg2fQ.VsJB07H0Vos4uFrkYwVvJ5v97wLoOpRret4xS-dQGDGMp0w52IBvxoaNQBQPcUue2JStdnvvLpUP3XAbzGSjvA
+
+{
+    "Username":"TestUser9X",
+    "Email":"testuser9X@example.com",
+    "Realname":"Test User 9X"
+}
