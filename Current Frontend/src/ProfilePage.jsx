@@ -90,6 +90,74 @@ const ProfilePage = () => {
         }
     };
 
+    // Opens "Edit Profile" form with current profile data
+    // Prevents error where if user edits profile, then cancels, the form will open with their cancelled data
+    const handleOpenEditProfileForm = async () => {
+        try {
+            await fetchProfileData(); // Re-fetch the current profile details
+            setShowEditProfileForm(true); // Then open the edit form
+        } catch (error) {
+            console.error("Error fetching profile data:", error);
+            setError("Failed to load current profile details.");
+        }
+    };
+
+    // Processing profile editing
+    const handleEditProfile = async (e) => {
+        e.preventDefault();
+        if (!username || !realname || !email) {
+            setError("All fields are required.");
+            return;
+        }
+
+        const token = localStorage.getItem('token');
+        if (!token) {
+            setError("You are not authenticated. Please log in.");
+            return;
+        }
+
+        const confirmUpdate = window.confirm("Are you sure you want to update your profile?");
+        if (!confirmUpdate) {
+            alert("Profile update canceled.");
+            setShowEditProfileForm(false);
+            return;
+        }
+
+        try {
+            const response = await axios.put('http://localhost:5088/api/account/profile/update', 
+                {
+                    Username: username,
+                    Email: email,
+                    RealName: realname
+                },
+                {
+                    headers: 
+                    { 
+                        "Content-Type": "application/json",
+                        Authorization: `Bearer ${token}` 
+                    }
+                }
+            );
+
+            if (response.status === 204) {
+                alert("Profile updated successfully.");
+                console.log("Profile updated successfully.");
+                await fetchProfileData();
+                setShowEditProfileForm(false);
+                setError("");
+            } else {
+                setError("Failed to update profile. Please try again later.");
+            }
+        } catch (error) {
+            console.error("Error updating profile:", error.response ? error.response.data : error.message);
+            setError("Failed to update profile. Please try again later.");
+        }
+
+        console.log("Profile update requested:", { username, realname, email });
+        setShowEditProfileForm(false);
+        setError("");
+    };
+
     // Handling account deletion
     const handleDeleteAccount = () => {
         if (!deletePassword) {
@@ -120,19 +188,6 @@ const ProfilePage = () => {
         setError("");
     };
 
-    // Processing profile editing
-    const handleEditProfile = (e) => {
-        e.preventDefault();
-        if (!username || !realname || !email) {
-            setError("All fields are required.");
-            return;
-        }
-        // Here will be the API call to update the profile
-        console.log("Profile update requested:", { username, realname, email });
-        setShowEditProfileForm(false);
-        setError("");
-    };
-
     return (
         <>
             <Navbar />
@@ -148,7 +203,7 @@ const ProfilePage = () => {
                 </div>
 
                 {/* Buttons for actions */}
-                <button onClick={() => setShowEditProfileForm(true)}>Edit Profile</button>
+                <button onClick={handleOpenEditProfileForm}>Edit Profile</button>
                 <button onClick={() => setShowChangePasswordForm(true)}>Change Password</button>
                 <button className="delete-button" onClick={() => setShowDeleteModal(true)}>Delete Account</button>
 
