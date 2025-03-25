@@ -13,7 +13,8 @@ const ProfilePage = () => {
     });
 
     const [joinedEvents, setJoinedEvents] = useState([]); // State for events in which the user participates
-    const [error, setError] = useState(null); // State for Errors
+    const [error, setError] = useState(null); // State for Errors outside modal
+    const [modalError, setModalError] = useState(null); // State for Errors inside modal
     const [loading, setLoading] = useState(true); // State to load data
 
     // Stats for modal windows and forms
@@ -96,9 +97,9 @@ const ProfilePage = () => {
         try {
             await fetchProfileData(); // Re-fetch the current profile details
             setShowEditProfileForm(true); // Then open the edit form
-        } catch (error) {
-            console.error("Error fetching profile data:", error);
-            setError("Failed to load current profile details.");
+        } catch (modalError) {
+            console.error("Error fetching profile data:", modalError);
+            setModalError("Failed to load current profile details.");
         }
     };
 
@@ -106,13 +107,13 @@ const ProfilePage = () => {
     const handleEditProfile = async (e) => {
         e.preventDefault();
         if (!username || !realname || !email) {
-            setError("All fields are required.");
+            setModalError("All fields are required.");
             return;
         }
 
         const token = localStorage.getItem('token');
         if (!token) {
-            setError("You are not authenticated. Please log in.");
+            setModalError("You are not authenticated. Please log in.");
             return;
         }
 
@@ -144,30 +145,30 @@ const ProfilePage = () => {
                 console.log("Profile updated successfully.");
                 await fetchProfileData();
                 setShowEditProfileForm(false);
-                setError("");
+                setModalError("");
             } else {
-                setError("Failed to update profile. Please try again later.");
+                setModalError("Failed to update profile. Please try again later.");
             }
-        } catch (error) {
+        } catch (modalError) {
             console.error("Error updating profile:", error.response ? error.response.data : error.message);
-            setError("Failed to update profile. Please try again later.");
+            setModalError("Failed to update profile. Please try again later.");
         }
 
         console.log("Profile update requested:", { username, realname, email });
         setShowEditProfileForm(false);
-        setError("");
+        setModalError("");
     };
 
     // Handling account deletion
     const handleDeleteAccount = () => {
         if (!deletePassword) {
-            setError("Please enter your password to confirm.");
+            setModalError("Please enter your password to confirm.");
             return;
         }
         // This will be the API call to delete the account
         console.log("Account deletion requested with password:", deletePassword);
         setShowDeleteModal(false);
-        setError("");
+        setModalError("");
         setDeletePassword("");
     };
 
@@ -175,17 +176,18 @@ const ProfilePage = () => {
     const handleChangePassword = (e) => {
         e.preventDefault();
         if (!oldPassword || !newPassword || !confirmPassword) {
-            setError("All fields are required.");
+            setModalError("All fields are required.");
             return;
         }
         if (newPassword !== confirmPassword) {
-            setError("New password and confirmation do not match.");
+            setModalError("New password and confirmation do not match.");
             return;
         }
+
         // Here will be the API call for changing the password
         console.log("Password change requested:", { oldPassword, newPassword });
         setShowChangePasswordForm(false);
-        setError("");
+        setModalError("");
     };
 
     return (
@@ -249,10 +251,10 @@ const ProfilePage = () => {
                                     required
                                 />
                             </div>
-                            {error && <p className="error-message">{error}</p>}
+                            {modalError && <p className="error-message">{modalError}</p>}
                             <button onClick={() => {
                                 setShowDeleteModal(false);
-                                setError("");
+                                setModalError("");
                             }}>Cancel</button>
                             <button className="delete-button" onClick={handleDeleteAccount}>Delete Account</button>
                         </div>
@@ -292,7 +294,7 @@ const ProfilePage = () => {
                                         required
                                     />
                                 </div>
-                                {error && <p className="error-message">{error}</p>}
+                                {modalError && <p className="error-message">{modalError}</p>}
                                 <button type="submit">Submit</button>
                                 <button type="button" onClick={() => setShowChangePasswordForm(false)}>Cancel</button>
                             </form>
@@ -333,7 +335,7 @@ const ProfilePage = () => {
                                         required
                                     />
                                 </div>
-                                {error && <p className="error-message">{error}</p>}
+                                {modalError && <p className="error-message">{modalError}</p>}
                                 <button type="submit">Save Changes</button>
                                 <button type="button" onClick={() => setShowEditProfileForm(false)}>Cancel</button>
                             </form>
