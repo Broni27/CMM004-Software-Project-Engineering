@@ -165,6 +165,16 @@ const ProfilePage = () => {
             setModalError("Please enter your password to confirm.");
             return;
         }
+
+        if(deletePassword != profileData.password) {
+            setModalError("Password is incorrect. Your account has not been deleted.");
+            return;
+        }
+
+        if (deletePassword === profileData.password) {
+            confirm("Are you certain you want to delete your account? This action cannot be undone.");
+        }
+
         // This will be the API call to delete the account
         console.log("Account deletion requested with password:", deletePassword);
         setShowDeleteModal(false);
@@ -181,6 +191,10 @@ const ProfilePage = () => {
         }
         if (newPassword !== confirmPassword) {
             setModalError("New password and confirmation do not match.");
+            return;
+        }
+        if (oldPassword != profileData.password) {
+            setModalError("Old password is incorrect.");
             return;
         }
 
@@ -252,11 +266,11 @@ const ProfilePage = () => {
                                 />
                             </div>
                             {modalError && <p className="error-message">{modalError}</p>}
+                            <button className="delete-button" onClick={handleDeleteAccount}>Delete Account</button>
                             <button onClick={() => {
                                 setShowDeleteModal(false);
                                 setModalError("");
                             }}>Cancel</button>
-                            <button className="delete-button" onClick={handleDeleteAccount}>Delete Account</button>
                         </div>
                     </div>
                 )}
