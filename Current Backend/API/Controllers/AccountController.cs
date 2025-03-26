@@ -89,6 +89,43 @@ namespace API.Controllers
             };
         }
 
+        [HttpPost("registernewadmin")] //api/account/registernewadmin
+        public async Task<ActionResult<UserDto>> RegisterNewAdmin(RegisterDto registerDto)
+        {
+            //Check if any required fields are missing
+            if (string.IsNullOrWhiteSpace(registerDto.Username) ||
+                string.IsNullOrWhiteSpace(registerDto.Email) ||
+                string.IsNullOrWhiteSpace(registerDto.Password) ||
+                string.IsNullOrWhiteSpace(registerDto.Realname))
+            {
+                return BadRequest(new { message = "All fields are required." });
+            }
+
+            if (await _context.Users.AnyAsync(u => u.Email.ToLower() == registerDto.Email.ToLower()))
+                return BadRequest(new { message = "This email is already registered." });
+
+            var signingKey = new HMACSHA512();
+            User newUser = new User
+            {
+                Username = registerDto.Username.ToLower(),
+                Email = registerDto.Email,
+                Realname = registerDto.Realname,
+                Role = Role.ADMIN,
+                PasswordHash = signingKey.ComputeHash(Encoding.UTF8.GetBytes(registerDto.Password)),
+                PasswordSalt = signingKey.Key
+            };
+            _context.Users.Add(newUser);
+            await _context.SaveChangesAsync();
+
+            return new UserDto
+            {
+                Username = newUser.Username,
+                Email = newUser.Email,
+                Realname = newUser.Realname,
+                Token = _tokenService.CreateToken(newUser)
+            };
+        }
+
         // User profile endpoint, allows retrieval of user details on Profile page
         [HttpGet("profile")] //api/acount/profile
         [Authorize]

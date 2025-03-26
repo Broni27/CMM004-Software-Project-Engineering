@@ -28,7 +28,8 @@ public class TokenService
         var claims = new List<Claim>
         {
             new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),       //Stores user Id in the token (used to find user)
-            new Claim(ClaimTypes.Email, user.Email)                         //Email (since login is email-based)
+            new Claim(ClaimTypes.Email, user.Email),        //Email (since login is email-based)
+            new Claim(ClaimTypes.Role, user.Role.ToString())           
         };
 
         //Defines signing credentials using HmacSha512 algorithm

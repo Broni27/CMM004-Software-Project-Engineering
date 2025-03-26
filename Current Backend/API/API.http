@@ -1,6 +1,30 @@
 @API_HostAddress = http://localhost:5088
 
 ###
+//User Register
+POST {{API_HostAddress}}/api/account/register
+Content-Type: application/json
+
+{
+    "username":"testuser24",
+    "email":"testuser24@example.com",
+    "realname":"testuser24",
+    "password":"test@123"
+}
+
+###
+//Admin Register
+POST {{API_HostAddress}}/api/account/registernewadmin
+Content-Type: application/json
+
+{
+    "username":"testuser25",
+    "email":"testuser25@example.com",
+    "realname":"testuser25",
+    "password":"test@123"
+}
+
+###
 //User login
 POST {{API_HostAddress}}/api/account/login
 Content-Type: application/json
@@ -127,3 +151,16 @@ Authorization: Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiI5IiwiZ
     "Email":"testuser9X@example.com",
     "Realname":"Test User 9X"
 }
+
+###
+//Get all users
+GET {{API_HostAddress}}/api/user
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIyNSIsImVtYWlsIjoidGVzdHVzZXIyNUBleGFtcGxlLmNvbSIsInJvbGUiOiJBRE1JTiIsIm5iZiI6MTc0Mjk5NDk4NCwiZXhwIjoxNzQzNTk5Nzg0LCJpYXQiOjE3NDI5OTQ5ODR9.MNtG2I8vYGPdxJejaPqYpDPL0vm_-V9fVIePjrzUSVBWcY-isSIyWs81_cXBht-vFB4QK6Qvfnky_WWI6eF6Tg
+
+###
+//Delete user
+DELETE {{API_HostAddress}}/api/user/24
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIyNSIsImVtYWlsIjoidGVzdHVzZXIyNUBleGFtcGxlLmNvbSIsInJvbGUiOiJBRE1JTiIsIm5iZiI6MTc0Mjk5NDk4NCwiZXhwIjoxNzQzNTk5Nzg0LCJpYXQiOjE3NDI5OTQ5ODR9.MNtG2I8vYGPdxJejaPqYpDPL0vm_-V9fVIePjrzUSVBWcY-isSIyWs81_cXBht-vFB4QK6Qvfnky_WWI6eF6Tg
+

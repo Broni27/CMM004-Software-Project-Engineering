@@ -1,31 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Masters Semester 2 files\\GitHub\\Software-Project-Engineering\\Current Backend\\API\\API.csproj": {}
+    "/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/Current Backend/API/API.csproj": {}
   },
   "projects": {
-    "D:\\Masters Semester 2 files\\GitHub\\Software-Project-Engineering\\Current Backend\\API\\API.csproj": {
+    "/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/Current Backend/API/API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Masters Semester 2 files\\GitHub\\Software-Project-Engineering\\Current Backend\\API\\API.csproj",
+        "projectUniqueName": "/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/Current Backend/API/API.csproj",
         "projectName": "API",
-        "projectPath": "D:\\Masters Semester 2 files\\GitHub\\Software-Project-Engineering\\Current Backend\\API\\API.csproj",
-        "packagesPath": "C:\\Users\\karol\\.nuget\\packages\\",
-        "outputPath": "D:\\Masters Semester 2 files\\GitHub\\Software-Project-Engineering\\Current Backend\\API\\obj\\",
+        "projectPath": "/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/Current Backend/API/API.csproj",
+        "packagesPath": "/Users/kwantungng/.nuget/packages/",
+        "outputPath": "/Users/kwantungng/Documents/GitHub/Software-Project-Engineering/Current Backend/API/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "D:\\VisuALL Studio\\Visual Studio Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\karol\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/kwantungng/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -44,7 +38,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net9.0": {
@@ -90,7 +84,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.102/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
