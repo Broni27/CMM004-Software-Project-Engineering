@@ -179,21 +179,58 @@ const ProfilePage = () => {
     };
 
     // Handling account deletion
-    const handleDeleteAccount = () => {
+    const handleDeleteAccount = async () => {
         if (!deletePassword) {
             setModalError("Please enter your password to confirm.");
             return;
         }
 
-        if (deletePassword != profileData.password) {
-            setModalError("Password is incorrect. Your account has not been deleted.");
-            return;
+        console.log("Account deletion requested with password:", deletePassword);
+
+        try {
+            const token = localStorage.getItem('token');
+            if (!token) {
+                setModalError("You are not authenticated. Please log in.");
+                return;
+            }
+
+            const response = await axios.delete('http://localhost:5088/api/account/close', {
+                headers: {
+                    "Content-Type": "application/json",
+                    Authorization: `Bearer ${token}`
+                },
+                data: { Password: deletePassword }
+            });
+
+            if (response.status === 401) {
+                setModalError("Incorrect password. Please try again.");
+                return;
+            }
+
+            if (response.status === 204) {
+                // Final confirmation before account deletion
+                const confirmDelete = window.confirm(
+                    "Are you sure you want to delete your account? This action will permanently delete your account and all events you created. This action cannot be undone."
+                );
+
+                if (!confirmDelete) {
+                    alert("Account deletion canceled. Your account has not been deleted.");
+                    return;
+                }
+
+                // Proceed with deletion if user confirms
+                alert("Your account has been deleted successfully.");
+                console.log("Account deleted successfully.");
+                localStorage.clear();
+                window.location.href = '/auth';
+            } else {
+                setModalError("Failed to delete account. Please try again later.");
+            }
+        } catch (error) {
+            console.error("Error deleting account:", error.response ? error.response.data : error.message);
+            setModalError("Failed to delete account. Please try again later.");
         }
 
-        // This will be the API call to delete the account
-        console.log("Account deletion requested with password:", deletePassword);
-        setShowDeleteModal(false);
-        setModalError("");
         setDeletePassword("");
     };
 
@@ -243,9 +280,7 @@ const ProfilePage = () => {
                 setNewPassword("");
                 setConfirmPassword("");
                 // Logout the user after password change and redirect to login page
-                localStorage.removeItem('token');  
-                localStorage.removeItem('username');
-                localStorage.removeItem('email');
+                localStorage.clear();
                 window.location.href = '/auth';
             } else {
                 setModalError("Failed to change password. Please try again later.");
