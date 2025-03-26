@@ -17,7 +17,7 @@ const ProfilePage = () => {
     const [modalError, setModalError] = useState(null); // State for Errors inside modal
     const [loading, setLoading] = useState(true); // State to load data
 
-    // Stats for modal windows and forms
+    // States for modal windows and forms
     const [showDeleteModal, setShowDeleteModal] = useState(false);
     const [deletePassword, setDeletePassword] = useState('');
     const [showChangePasswordForm, setShowChangePasswordForm] = useState(false);
@@ -92,15 +92,34 @@ const ProfilePage = () => {
     };
 
     // Opens "Edit Profile" form with current profile data
-    // Prevents error where if user edits profile, then cancels, the form will open with their cancelled data
-    const handleOpenEditProfileForm = async () => {
-        try {
-            await fetchProfileData(); // Re-fetch the current profile details
-            setShowEditProfileForm(true); // Then open the edit form
-        } catch (modalError) {
-            console.error("Error fetching profile data:", modalError);
-            setModalError("Failed to load current profile details.");
+    // Opens "Change Password" and "Delete Account" modals with no content
+    const handleOpenModals = async (modalType) => {
+        switch (modalType) {
+            case 'editProfile':
+                try {
+                    await fetchProfileData(); // Re-fetch the current profile details
+                    setShowEditProfileForm(true); // Then open the edit form
+                } catch (modalError) {
+                    console.error("Error fetching profile data:", modalError);
+                    setModalError("Failed to load current profile details.");
+                }
+                break;
+            case 'passwordChange':
+                // Reset password change form fields
+                setOldPassword("");
+                setNewPassword("");
+                setConfirmPassword("");
+                setShowChangePasswordForm(true);
+                break;
+            case 'deleteAccount':
+                // Reset delete account form fields
+                setDeletePassword("");
+                setShowDeleteModal(true);
+                break;
+            default:
+                break;
         }
+
     };
 
     // Processing profile editing
@@ -125,17 +144,17 @@ const ProfilePage = () => {
         }
 
         try {
-            const response = await axios.put('http://localhost:5088/api/account/profile/update', 
+            const response = await axios.put('http://localhost:5088/api/account/profile/update',
                 {
                     Username: username,
                     Email: email,
                     RealName: realname
                 },
                 {
-                    headers: 
-                    { 
+                    headers:
+                    {
                         "Content-Type": "application/json",
-                        Authorization: `Bearer ${token}` 
+                        Authorization: `Bearer ${token}`
                     }
                 }
             );
@@ -166,13 +185,9 @@ const ProfilePage = () => {
             return;
         }
 
-        if(deletePassword != profileData.password) {
+        if (deletePassword != profileData.password) {
             setModalError("Password is incorrect. Your account has not been deleted.");
             return;
-        }
-
-        if (deletePassword === profileData.password) {
-            confirm("Are you certain you want to delete your account? This action cannot be undone.");
         }
 
         // This will be the API call to delete the account
@@ -183,8 +198,9 @@ const ProfilePage = () => {
     };
 
     // Process password change
-    const handleChangePassword = (e) => {
+    const handleChangePassword = async (e) => {
         e.preventDefault();
+
         if (!oldPassword || !newPassword || !confirmPassword) {
             setModalError("All fields are required.");
             return;
@@ -193,15 +209,51 @@ const ProfilePage = () => {
             setModalError("New password and confirmation do not match.");
             return;
         }
-        if (oldPassword != profileData.password) {
-            setModalError("Old password is incorrect.");
-            return;
-        }
 
-        // Here will be the API call for changing the password
-        console.log("Password change requested:", { oldPassword, newPassword });
-        setShowChangePasswordForm(false);
-        setModalError("");
+        try {
+            const token = localStorage.getItem('token');
+            if (!token) {
+                setModalError("You are not authenticated. Please log in.");
+                return;
+            }
+
+            const response = await axios.put('http://localhost:5088/api/account/passwordchange',
+                {
+                    Password: oldPassword,
+                    NewPassword: newPassword
+                },
+                {
+                    headers:
+                    {
+                        "Content-Type": "application/json",
+                        Authorization: `Bearer ${token}`
+                    }
+                }
+            );
+
+            console.log("Password change requested:", { oldPassword, newPassword });
+
+            if (response.status === 204) {
+                // Notify the user and reset the form
+                alert("Password changed successfully. Please log in again.");
+                console.log("Password changed successfully");
+                setShowChangePasswordForm(false);
+                setModalError("");
+                setOldPassword("");
+                setNewPassword("");
+                setConfirmPassword("");
+                // Logout the user after password change and redirect to login page
+                localStorage.removeItem('token');  
+                localStorage.removeItem('username');
+                localStorage.removeItem('email');
+                window.location.href = '/auth';
+            } else {
+                setModalError("Failed to change password. Please try again later.");
+            }
+        } catch (error) {
+            console.error("Error changing password:", error.response ? error.response.data : error.message);
+            setModalError("Failed to change password. Please try again later.");
+        };
     };
 
     return (
@@ -219,9 +271,9 @@ const ProfilePage = () => {
                 </div>
 
                 {/* Buttons for actions */}
-                <button onClick={handleOpenEditProfileForm}>Edit Profile</button>
-                <button onClick={() => setShowChangePasswordForm(true)}>Change Password</button>
-                <button className="delete-button" onClick={() => setShowDeleteModal(true)}>Delete Account</button>
+                <button onClick={() => handleOpenModals('editProfile')}>Edit Profile</button>
+                <button onClick={() => handleOpenModals('passwordChange')}>Change Password</button>
+                <button className="delete-button" onClick={() => handleOpenModals('deleteAccount')}>Delete Account</button>
 
                 {/* List of events in which the user participates */}
                 <div className="event-info">
