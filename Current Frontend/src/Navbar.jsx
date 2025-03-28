@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import profile from './assets/profile.svg';
-import './Styles.css'; // Import the CSS file for Navbar styles
+import './Styles.css';
 import userService from "./API/UserService.js";
 
 const Navbar = () => {
@@ -9,18 +9,30 @@ const Navbar = () => {
     const location = useLocation();
     const [showLoginPrompt, setShowLoginPrompt] = useState(false);
     const [targetPage, setTargetPage] = useState('');
-    let token = localStorage.getItem('token');
+    const [isAdmin, setIsAdmin] = useState(false);
+    const token = localStorage.getItem('token');
+
+    // Check admin status when token changes
+    useEffect(() => {
+        if (token) {
+            try {
+                const payload = JSON.parse(atob(token.split('.')[1]));
+                setIsAdmin(payload.role === 'ADMIN');
+            } catch (err) {
+                console.error('Error decoding token:', err);
+                setIsAdmin(false);
+            }
+        } else {
+            setIsAdmin(false);
+        }
+    }, [token]);
 
     const handleLoginPrompt = (e, page) => {
         if (!token) {
             setTargetPage(page);
             setShowLoginPrompt(true);
         } else {
-            if (page === 'events') {
-                navigate('/events');
-            } else if (page === 'profile') {
-                navigate('/profile');
-            }
+            navigate(`/${page}`);
         }
     };
 
@@ -35,6 +47,7 @@ const Navbar = () => {
 
     const logout = () => {
         userService.logout();
+        setIsAdmin(false);
         navigate('/home');
     };
 
@@ -47,10 +60,9 @@ const Navbar = () => {
             const timer = setTimeout(() => {
                 setShowLoginPrompt(false);
             }, 3000);
-
             return () => clearTimeout(timer);
         }
-    }, [token, location.pathname, showLoginPrompt]);
+    }, [token, location.pathname, showLoginPrompt, navigate]);
 
     return (
         <div>
@@ -63,7 +75,6 @@ const Navbar = () => {
                 </div>
             )}
 
-            {/* Display different message if user is already on AuthPage */}
             {showLoginPrompt && location.pathname === '/auth' && (
                 <div className="login-prompt">
                     <p>Please log in below</p>
@@ -71,10 +82,8 @@ const Navbar = () => {
             )}
 
             <nav className="navbar">
-                {/* Left section (empty for spacing) */}
                 <div className="navbar-left"></div>
 
-                {/* Center section for Home and Manage Events */}
                 <div className="navbar-center">
                     <Link to="/home" className="navbar-link">Home</Link>
                     <button
@@ -83,18 +92,28 @@ const Navbar = () => {
                     >
                         Manage Events
                     </button>
+                    {isAdmin && (
+                        <button
+                            onClick={() => navigate('/admin')}
+                            className="navbar-link admin-link"
+                        >
+                            Admin Dashboard
+                        </button>
+                    )}
                 </div>
 
-                {/* Right section for Profile and Logout */}
                 <div className="navbar-right">
                     <button
                         onClick={(e) => handleLoginPrompt(e, 'profile')}
                         className="navbar-link"
                     >
-                        <img src={profile} alt="Profile page" className="navbar-icon-img" />
+                        <img src={profile} alt="Profile" className="navbar-icon-img" />
                     </button>
-                    {token && <button className="logout" onClick={logout}>Log Out</button>}
-                    {!token && <Link to="/auth" className="navbar-link">Login</Link>}
+                    {token ? (
+                        <button className="logout" onClick={logout}>Log Out</button>
+                    ) : (
+                        <Link to="/auth" className="navbar-link">Login</Link>
+                    )}
                 </div>
             </nav>
         </div>

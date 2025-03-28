@@ -1,0 +1,82 @@
+.admin-container {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 80px auto 0;
+    font-family: Arial, sans-serif;
+}
+
+.user-management {
+    margin-top: 2rem;
+    background-color: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.table-responsive {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #316148;
+    color: white;
+    position: sticky;
+    top: 0;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+.btn-delete {
+    padding: 6px 12px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-delete:hover {
+    background-color: #c0392b;
+}
+
+.admin-loading {
+    padding: 2rem;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #316148;
+}
+
+.admin-error {
+    padding: 1.5rem;
+    margin: 2rem auto;
+    max-width: 800px;
+    background-color: #ffebee;
+    color: #c62828;
+    border-radius: 4px;
+    border-left: 4px solid #c62828;
+}
+
+@media (max-width: 768px) {
+    .admin-container {
+        padding: 1rem;
+    }
+
+    th, td {
+        padding: 8px 10px;
+    }
+}
