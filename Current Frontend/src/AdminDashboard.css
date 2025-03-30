@@ -1,82 +1,100 @@
+/* Main container styling */
 .admin-container {
     padding: 2rem;
     max-width: 1200px;
-    margin: 80px auto 0;
+    margin: 80px auto 0; /* 80px top margin to account for fixed navbar */
     font-family: Arial, sans-serif;
 }
 
+/* User management section styling */
 .user-management {
     margin-top: 2rem;
-    background-color: #f9f9f9;
+    background-color: #f9f9f9; /* Light background */
     padding: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow */
 }
 
+/* Makes table scroll horizontally on small screens */
 .table-responsive {
     overflow-x: auto;
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
 }
 
+/* Table styling */
 table {
     width: 100%;
-    border-collapse: collapse;
+    border-collapse: collapse; /* Removes space between borders */
     margin-top: 1rem;
 }
 
+/* Table header and cell styling */
 th, td {
     padding: 12px 15px;
     text-align: left;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #ddd; /* Light border between rows */
 }
 
+/* Table header specific styling */
 th {
-    background-color: #316148;
+    background-color: #316148; /* Brand green color */
     color: white;
-    position: sticky;
+    position: sticky; /* Makes header stick during scroll */
     top: 0;
 }
 
+/* Row hover effect */
 tr:hover {
-    background-color: #f1f1f1;
+    background-color: #f1f1f1; /* Light gray on hover */
 }
 
+/* Delete button styling */
 .btn-delete {
     padding: 6px 12px;
-    background-color: #e74c3c;
+    background-color: #e74c3c; /* Red color for destructive action */
     color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s; /* Smooth color transition */
 }
 
+/* Delete button hover state */
 .btn-delete:hover {
-    background-color: #c0392b;
+    background-color: #c0392b; /* Darker red on hover */
 }
 
+/* Loading state styling */
 .admin-loading {
     padding: 2rem;
     text-align: center;
     font-size: 1.2rem;
-    color: #316148;
+    color: #316148; /* Brand green color */
 }
 
+/* Error message styling */
 .admin-error {
     padding: 1.5rem;
     margin: 2rem auto;
     max-width: 800px;
-    background-color: #ffebee;
-    color: #c62828;
+    background-color: #ffebee; /* Light red background */
+    color: #c62828; /* Dark red text */
     border-radius: 4px;
-    border-left: 4px solid #c62828;
+    border-left: 4px solid #c62828; /* Accent border */
 }
 
+/* Responsive design for mobile devices */
 @media (max-width: 768px) {
     .admin-container {
-        padding: 1rem;
+        padding: 1rem; /* Less padding on small screens */
     }
 
     th, td {
-        padding: 8px 10px;
+        padding: 8px 10px; /* Smaller padding on mobile */
+    }
+
+    .btn-delete {
+        padding: 4px 8px; /* Smaller button on mobile */
+        font-size: 0.9rem;
     }
 }
