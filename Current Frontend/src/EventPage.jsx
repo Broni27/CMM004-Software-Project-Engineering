@@ -51,10 +51,6 @@ function EventPage() {
     };
 
     const handleEditEvent = (event) => {
-        /*Formatting fix for time fields (frontend - 00:00, backend - 00:00:00)
-        This would cause issues when editing events, when creating an event a :00 is appended automatically to allow for backend storing
-        But, upon editing another :00 would append, causing only 1 edit to be possible on an event
-        This fixes that*/
         const formattedStartTime = event.startTime && event.startTime.length > 5
             ? event.startTime.substring(0, 5)
             : event.startTime;

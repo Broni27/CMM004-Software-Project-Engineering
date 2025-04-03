@@ -81,7 +81,7 @@ const ProfilePage = () => {
 
             if (response.status === 200) {
                 alert(`You have successfully left the event: ${eventTitle}`);
-                await fetchProfileData(); // Обновляем список событий
+                await fetchProfileData(); // Updating the event list
             } else {
                 alert('Failed to leave event. Please try again later.');
             }

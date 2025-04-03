@@ -1,6 +1,6 @@
 /* Container for the login prompt */
 .login-prompt {
-    position: relative; /* Уведомление будет под Navbar */
+    position: relative; /* The notification will be under the Navbar */
     top: 0;
     left: 0;
     right: 0;
@@ -8,18 +8,18 @@
     color: white;
     padding: 15px;
     text-align: center;
-    z-index: 1000; /* Убедись, что z-index меньше, чем у Navbar */
+    z-index: 1000;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px; /* Space between text and buttons */
-    margin-top: 60px; /* Отступ сверху, чтобы уведомление не перекрывалось Navbar */
-    width: 90%; /* Ширина уведомления */
-    max-width: 800px; /* Максимальная ширина */
+    margin-top: 60px;
+    width: 90%;
+    max-width: 800px;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 5px; /* Скругленные углы */
+    border-radius: 5px;
 }
 
 .login-prompt p {

@@ -96,26 +96,26 @@
   font-size: 14px;
   margin-top: 10px;
 }
-/* Переопределение глобальных стилей для контейнера */
+/* Overriding global styles for a container */
 .event-page-container {
-  display: block; /* Переопределение display: flex */
+  display: block; /* Override display: flex */
   padding: 20px;
-  max-width: 1400px; /* Увеличенная максимальная ширина контейнера */
+  max-width: 1400px; /* Increased maximum container width */
   margin: 0 auto;
   text-align: center;
-  padding-top: 80px; /* Верхний отступ для избежания наложения с Navbar */
+  padding-top: 80px; /* Top indent to avoid overlap with Navbar */
 }
 
-/* Переопределение глобальных стилей для формы */
+/* Overriding global styles for a form */
 .create-event-form {
-  display: block; /* Переопределение display: flex */
+  display: block; /* Override display: flex */
   background-color: #f9f9f9;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin-top: 20px;
-  width: 95%; /* Форма занимает 95% ширины контейнера */
-  max-width: 1200px; /* Увеличенная максимальная ширина формы */
+  width: 95%; /* The mold occupies 95% of the width of the container */
+  max-width: 1200px; /* Форма занимает 95% ширины контейнера */
   margin-left: auto;
   margin-right: auto;
 }
