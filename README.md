@@ -104,6 +104,12 @@ It is likely that a crucial file is missing:
 | /api/userevent/join/{eventId} | POST     | Allows a user to join an event          |
 | /api/userevent/joined         | GET      | Retrieves all events joined by the user |
 | /api/userevent/leave/{eventId}| DELETE   | Allows a user to leave an event         |
+| /api/account/close            | DELETE   | Allows a user to close his account      |
+| /api/account/registernewadmin | POST     | Admin register                          |
+| /api/account/passwordchange   | PUT      | Allows a user to change his password    |
+| /api/account/profile/update   | PUT      | Allows a user to update his profile     |
+| /api/user                     | GET      | Allows an admin to view all user details|
+| /api/user/{id}                | DELETE   | Allows an admin to remove a user        |
 
 ## 🔒 Security Highlights
 - JWT Authentication: Secure token-based authentication for user sessions.
